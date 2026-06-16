@@ -11,7 +11,14 @@
 <head>
 <title>문화예술교육 전문 웹진 : 아르떼365</title> 
 <meta property="og:type" content="website"> 
-<meta property="og:title" content="아르떼365">
+<meta property="og:title" content="<?php 
+	// 2026.06.16 수정: 상세 기사 페이지(single)인 경우 메타 타이틀을 해당 기사의 제목으로 동적 로드
+	if ( is_single() ) {
+		single_post_title();
+	} else {
+		echo '아르떼365';
+	}
+?>">
 <meta property="og:description" content="한국문화예술교육진흥원 웹진, 문화예술교육 사례/아이디어/리포트/컬럼/인터뷰/지원정책">
 <meta property="og:image" content="<?php the_post_thumbnail_url();?>">
 <!-- <meta property="og:url" content="https://arte365.kr/"> -->

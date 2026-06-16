@@ -297,6 +297,12 @@
 		window.location.href= 'mailto:?body='+mail_cotent;
 	  });
 
+	  // 2026.06.16 수정: 브라우저 상에서 h1.post-title의 기사 제목을 가져와 og:title 메타태그의 content 값으로 교체
+	  var postTitle = jQuery('.post-title').text().trim();
+	  if (postTitle) {
+		jQuery('meta[property="og:title"]').attr('content', postTitle);
+	  }
+
 	});
 	
 </script>
