@@ -1,0 +1,224 @@
+/* @font-face {
+  font-family: "MaruBuri-Regular";
+  src:url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family:"MaruBuri-Regular", serif;
+}
+h2 {
+  font-family:"GmarketSansMedium", serif;
+}
+h3 {
+  font-family:"GmarketSansMedium", serif;
+}
+
+body {
+  font-family:"MaruBuri-Regular", serif;
+  font-size:17px;
+}
+body {
+  line-height:2.2em;
+} */
+
+
+html,body {
+    width: 100%;
+    height: 100%;
+/*    -webkit-text-size-adjust:none;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;     */  
+    
+    /*-webkit-font-smoothing: antialiased;*/
+    /*text-rendering: optimizeLegibility;*/
+    /*-moz-osx-font-smoothing: grayscale;*/
+    -webkit-text-size-adjust: 100%;   
+    word-break: keep-all;
+}
+
+html {
+    background: #fff;
+}
+
+body {
+	overflow-x:hidden;
+	font-family: 'Noto Sans KR', sans-serif;
+    /* font-family:  'Noto Sans KR', 'Nanum Gothic', '나눔고딕', 'Malgun Gothic', '맑은고딕', 'Spoqa Han Sans.', sans-serif; */
+    font-size: 17px;
+    letter-spacing: -0.05em;
+    color: #202020;
+    font-weight: 400;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #202020;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus,
+[type='checkbox']:focus,
+[type='radio']:focus,
+[tabindex]:focus,
+[href]:focus {
+    outline:none;
+}
+
+
+input,
+button,
+select,
+textarea {
+	font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Spoqa Han Sans..', 'Noto Sans KR',  'Nanum Gothic', '나눔고딕', 'Malgun Gothic', '맑은고딕', sans-serif; */
+    font-size: 17px;
+    letter-spacing: -0.05em;
+    font-weight: 400;
+    color: #202020;
+}
+
+strong {
+    font-weight: bold;
+}
+
+
+
+hr {
+    border:0;
+    border-top: 1px solid #000000;
+    margin: 40px 0;
+}
+
+
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.font-serif {
+    font-family: 'Nanum Myeongjo', serif !important;
+}
+
+.txt-em {
+    color: #f5003c !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+img {
+    height: auto;
+	max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+.sns-linker img {
+    margin-top:-5px;
+}
+
+@media print {
+    body,
+    .font-serif {
+        font-family: sans-serif;
+    }
+}
+
+/* 20181105 */
+#post-69412.post .post-title{letter-spacing:-0.1em;font-size:25px}
+.bullet_circle li{position:relative;padding-left:10px}
+.bullet_circle li:before{position:absolute;top:45%;left:0;width:3px;height:3px;border-radius:100%;border:1px solid #5f5f5f;transform:translate(-50%);content:""}
+
+.single #header{    background: rgba(56, 56, 56, 0.88);}
+
+*:focus{outline:#000;box-sizing:border-box}
+
+
+/*20210520*/
+.tabLink{max-width:1000px;height:60px;margin:-30px auto 0;flex-wrap:nowrap;background-color:#fff;text-align:center;}
+.tabLink a{display:block;width:100%;height:100%;line-height:55px;border:1px solid #bababa;color:#000;font-size:15px;font-weight:400 !important;}
+.tabLink a.selected{color:#f10e31;font-weight:400 !important;}
+.tabLink a + a{border-left:none;}
+.tabLink.fixed{position:fixed;top:120px;left:50%;width:1000px;transform:translateX(-50%);}
+.tabLink .num2 > div{width:50%}
+.tabLink .num3 > div{width:33.3%}
+.tabLink .num5 > div{width:25%}
+.tabLink .num6 > div{width:20%}
+.anker_wrap{/* margin-top:70px; */text-align:center;}
+.anker{position:relative;top:-200px;}
+.bar_wrap{display:none;position:fixed;/* top:100px; */left:0;width:100%;height:5px;background-color:#fff;}
+.tabLink .swiper-slide + .swiper-slide a{border-left:none;}
+.swiper-slide.on a {color:#f10e31;text-decoration:none;}
+
+/* 221107 */
+
+@media screen and (max-width: 768px){
+	.tabLink{margin-top:0;}
+}
+
+/* arte 서체 추가 */
+@font-face {
+  font-family: 'ArteBasic';
+  src: url('../fonts/ArteBasic-Regular.eot'); /* 구형 IE */
+  src: url('../fonts/ArteBasic-Regular.eot?#iefix') format('embedded-opentype'), /* IE9 */
+       url('../fonts/ArteBasic-Regular.woff2') format('woff2'), /* 최신 브라우저 */
+       url('../fonts/ArteBasic-Regular.woff') format('woff'), 
+       url('../fonts/ArteBasic-Regular.ttf') format('truetype'), 
+       url('../fonts/ArteBasic-Regular.otf') format('opentype');
+}
+
+@font-face{
+ font-family:'GangwonEduHyeonokT';
+ font-style:normal;
+ src: url('../fonts/gangwoneduhyeonokt.woff') format('woff');
+}

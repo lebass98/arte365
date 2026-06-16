@@ -1,0 +1,217 @@
+.page-header {
+	position: relative;
+	text-align: center;
+	padding: 60px 40px;
+	letter-spacing: -0.075em;
+}
+
+.page-header .page-name {
+	color: #000;
+	font-size: 50px;
+	font-weight: 500;
+	margin-bottom: 40px;
+}
+
+.page-header .page-description {
+	font-size: 22px;
+	color: #555;
+	font-weight: 400;
+	line-height: 1.3;
+}
+
+.page-header .page-description.size-sm {
+	font-size: 18px;
+	margin-top: 40px;
+	color: #6f6f6f;
+	font-weight: 300;
+	line-height: 1.3;
+}
+
+
+.page-content {
+	
+}
+
+.post-all{
+	max-width:1400px;
+	margin:0 auto;
+}
+
+.about-arte365 {
+	padding: 80px;
+	font-size: 15px;
+}
+.about-arte365 .about-block {
+	margin-bottom: 80px;
+}
+.about-arte365 p {
+	line-height: 1.8;
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+
+.about-arte365 h3 {
+	font-size: 26px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+
+.about-arte365 strong {
+
+	font-weight: 700;
+}
+
+.policycontent {
+	padding: 80px;
+	font-size: 15px;
+}
+
+.policycontent p {
+	line-height: 1.8;
+	margin-bottom: 20px;
+}
+
+.policycontent h4 {
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.policycontent h5 {
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.policycontent table {
+	margin-bottom: 20px !important;
+	width: 100%;
+}
+
+.policycontent table caption {
+	/* display: none; */
+	position:absolute;
+	top:-9999px;
+	left:-999px;
+}
+
+.policycontent table th,
+.policycontent table td {
+	padding: 15px;
+	font-size: 15px;
+	border: 1px solid #d7d7d7;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.policycontent table th {
+	background: #cacaca;
+}
+
+.policybot {
+	display: none;
+}
+
+.arte_intro h4{
+	font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 30px;
+	margin-top:50px;
+	color:#000;
+}
+.arte_intro .posttext{
+	color:#000;
+}
+
+/* 190702 */
+.post-all .su-posts-default-loop .su-post{display:inline-block;width:23%;margin-right:1em;vertical-align:top;}
+.post-all .su-posts-default-loop .su-post .su-post-thumbnail{float:none;width:100%;height:auto;margin-right:0;}
+.post-all .su-posts-default-loop .su-post:nth-child(4n){margin-right:0;}
+.post-all .su-posts-default-loop .su-post-thumbnail img{width:100%;height:auto;max-width:100%;max-height:100%;}
+.attention .mo{display:none;}
+
+.page-id-39807 #main .container{margin-bottom:80px}
+.intro_box {overflow: hidden;height: 1000px;padding: 70px 90px;box-sizing: border-box;background: url(http://www.arte365.kr/wp-content/uploads/2019/08/bg_intro_box.jpg) no-repeat 0 0;background-color: #ff7666;}
+/* .intro_box {overflow:hidden;height:1000px;padding:40px 90px;box-sizing:border-box;background:url('/wp-content/uploads/2019/08/bg_intro_box.jpg') no-repeat 0 0;} */
+.intro_box h3{margin-bottom:30px;font-size:40px;font-weight:300;color:#fff;}
+.intro_box  p.txt{font-size:20px;font-weight:300;color:#fff;line-height:1.9em;}
+.intro_box .left, .intro_box .right{float:left;width:100%;}
+.intro_box .left{margin-right:50px;margin-bottom:50px}
+.intro_box .txt + .txt{margin-top:30px}
+.intro_box .right .bullet_circle li{font-size: 20px;font-weight: 400;color: #fff;line-height: 2em;}
+.intro_box .right .bullet_circle li:before{top:12px;border:1px solid #fff}
+.intro_box .right p.txt{margin-top:20px}
+.intro_box .staff{float:left;width:100%;margin-top:50px}
+
+/* 20230608 아르떼 소개 추가 */
+.intro_new .txt_box {margin-bottom: 60px; text-align: center;}
+.intro_new .txt_box .tit {position: relative; display: inline-block; margin-bottom: 30px; padding: 15px 33px; box-sizing: border-box; text-align: center; background: #f57162; font-size: 25px; color: #fff; font-weight: 400;}
+.intro_new .txt_box .tit.tit_right {border-radius: 0 25px;}
+.intro_new .txt_box .tit.tit_left {border-radius: 25px 0;}
+.intro_new .txt_box .tit::after {position: absolute; left: 4px; top: 5px; display: inline-block; width: 100%; height: 100%; border: 1px dashed #f57162; content: '';}
+.intro_new .txt_box .tit.tit_right::after {border-radius: 0 25px;}
+.intro_new .txt_box .tit.tit_left::after {border-radius: 25px 0;}
+.txt_box .txt {font-size: 20px; line-height: 35px;}
+.txt_box .txt .bold_txt {font-weight: 500;}
+.staff {max-width: 700px; margin: 0 auto; padding: 50px 45px; box-sizing: border-box; background: #343434; border-radius: 30px 30px 0 0;}
+.staff .tit {margin-bottom: 50px; text-align: left; color: #fff; font-size: 26px;}
+.staff table tr:last-child td {padding-bottom: 0;}
+.staff table tr td {padding-bottom: 30px; box-sizing: border-box; font-size: 20px; color: #fff;}
+.staff table tr .name {font-size: 18px; font-weight: 200;}
+
+/* 20230615 아르떼 소개 추가 */
+.txt_box .tit span {font-size: 30px; font-weight: bold;}
+
+/* 20230627 아르떼 소개 추가 */
+.txt_box.txt_box1 .top_tit {margin-bottom: 33px; font-size: 40px; font-weight: 500;}
+.intro_new .txt_box .tit::after {display: none;}
+
+/* 20240716 2024 아르떼 개편 아르떼 소개 페이지 */
+.page-header {padding: 65px 40px;}
+.editor {margin-top: 100px;}
+.editor_tit {margin-bottom: 60px; text-align: center; font-size: 40px; line-height: 50px; font-weight: bold; color: #202020;}
+.editor_box {margin-bottom: 80px; text-align: center;}
+.editor_box .editor_name {display: inline-block; margin-bottom: 30px; font-size: 26px; line-height: 50px; font-weight: bold; color: #202020;}
+.editor_box .editor_txt {font-size: 20px; line-height: 34px; font-weight: 400; color: #202020;}
+.staff {margin-top: 128px;}
+
+/* 20240823 2024 아르떼 개편 아르떼 소개 페이지 이미지 추가 */
+.editor_box {display: flex; align-items: flex-start; margin-bottom: 50px;}
+.editor_box .editor_left {flex: none; margin-right: 49px;}
+.editor_box .editor_right {margin-top: 15px; text-align: left;}
+.editor_tit {margin-bottom: 56px;}
+.editor_box .editor_name {margin-bottom: 20px; font-size: 24px; line-height: 24px;}
+.editor_box .editor_txt {font-size: 18px; text-align: left; color: #555555; line-height: 28px;}
+.staff {margin-top: 100px;}
+
+/* 20241101 아르떼 편집위원 소개 추가 */
+.editor-tab.editor-tab--mo {display: none;}
+.editor-tab {display: flex; flex-direction: row; width: 100%; margin-bottom: 50px;}
+.editor-tab .tab {width: calc(100%/3); padding: 15px 0; text-align: center; background: #fff; border: 1px solid #dae1e2; box-sizing: border-box; font-size: 18px; line-height: 28px; border-left: none; font-weight: 500; color: #747478; cursor: pointer;}
+.editor-tab .tab:first-child {border-left: 1px solid #dae1e2;}
+.editor-tab .tab.active-tab {background: #f57162; color: #fff; font-weight: bold;}
+.editor-tabCont {display: none;}
+.editor-tabCont.active-content {display: block;}
+.tabCont_box {margin-bottom: 50px;}
+.tabCont_box .editor_right {text-align: left;}
+.tabCont_box .editor_name {display: inline-block; margin-bottom: 20px; font-size: 24px; line-height: 24px; font-weight: bold;}
+.tabCont_box .editor_txt {font-size: 18px; text-align: left; color: #555555; line-height: 28px; font-weight: 400;}
+
+@media screen and (max-width:1200px){
+	.intro_box {height: auto;background-position:  0 100%; background-size: contain;}
+}
+@media screen and (max-width:800px){
+	.intro_new .inner {padding: 40px;}
+	.intro_box {padding: 40px;}
+}
+@media screen and (max-width:640px){
+	.entry_content .intro_new .inner {padding: 40px;}
+	.entry_content .intro_box {padding: 40px;}
+	.policycontent {padding: 40px;}  
+	.intro_box h3 {font-size: 35px;}
+
+	/* 20230609 아르떼 소개 추가 */
+    .staff {padding: 35px; box-sizing: border-box;}
+    .staff .tit {margin-bottom: 30px; font-size: 20px;}
+    .staff table tr td {padding-bottom: 20px; font-size: 16px;}
+    .staff table tr .name {padding-left: 10px; font-size: 15px; line-height: 23px;}
+}

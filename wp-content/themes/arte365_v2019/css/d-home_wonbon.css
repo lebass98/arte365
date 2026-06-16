@@ -1,0 +1,65 @@
+/* 93 메인*/
+
+.featured-post{	width:700px;} /*2 img 가로 사이즈*/
+
+.left-area.right-bordered{height: 650px;} /* 첫번째 블럭 첫번째 이미지 사이즈*/
+.featured-post:first-child .tb{width:700px;height:400px;box-sizing:border-box;} /* 두번째 블럭 첫번째 이미지 사이즈*/
+.featured-post:nth-child(2) .tb{width:700px;height:400px;box-sizing:border-box;} /* 두번째 블럭 두번째 이미지 사이즈*/
+
+.home-main-banner .banner-desc .post-meta .post-title {
+    /* text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3); 
+	text-shadow: 2px 3px 7px rgba(0, 0, 0, 0.45);*/
+	font-size: 55px;
+	color: #fff;
+	margin-bottom: 25px;
+	font-weight: 500;
+	line-height:1.3em;
+}
+
+/* 메인1 소제목 */
+.home-main-banner .banner-desc .post-meta .post-excerpt {
+	margin-bottom:70px;
+	font-size: 24px;
+	font-weight:400;
+	color: #ffd33c;
+	text-shadow: 2px 3px 13px rgba(0, 0, 0, 0.3);
+	text-align:left;
+}
+
+/* 102 메인1 편집자 */
+.home-main-banner .banner-desc .post-meta .publisher{
+	font-size:18px;
+	color:#fff;
+	text-align:left;
+	text-shadow: 2px 3px 13px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------이벤트-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* 이벤트배너 위치조정 */
+.home .event_banner{display:block;height:140px}
+ .home .event_banner.slideup{display:none;height:0;}
+ .event_banner{display:block;position:relative;max-width:1400px;margin:0 auto;top:0;transition:all .5s ease}
+ .event_banner button{position:absolute;top:20px;right:20px;width:30px;height:30px;background:#fff;opacity:0;cursor:pointer;}
+ .home #header{	top:140px }
+ .home #header.moveUp{top:0;}
+
+
+/* 이벤트 서브페이지 */
+.single #header, .category #header, .page-id-51291 #header, .page-id-20286 #header, .page-id-436 #header, .post-type-archive-sublist #header,.post-type-archive-subject #header, .page-id-74904 #header , .page-id-39807 #header, .page-id-20289 #header{
+	background:#333;
+	/* background:rgba(56, 56, 56, 0.86); */
+	top:140px;
+}
+
+.single #header.solid, .category #header.solid, .page-id-51291 #header.solid, .page-id-20286 #header.solid, .page-id-436 #header.solid, .post-type-archive-sublist #header.solid,.post-type-archive-subject #header.solid, .page-id-74904 #header.solid, .page-template-default #header.solid{
+	background:rgba(56, 56, 56, 0.88);
+	top:0;
+}
+
+.single .event_wrap, .category .event_wrap, .page-id-74904 .event_wrap, .page-id-39807 .event_wrap, .page-id-20289 .event_wrap, .page-id-51291 .event_wrap, .page-id-20286 .event_wrap, .page-id-436 .event_wrap{
+	width:100%;background:#bcfff5;
+}

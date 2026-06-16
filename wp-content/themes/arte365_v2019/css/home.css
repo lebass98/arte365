@@ -1,0 +1,281 @@
+.split-area {
+
+}
+.split-area .left-area,
+.split-area .right-area {
+	margin-bottom: 30px;
+}
+.split-area .left-area {
+	float: left;
+	width: 768px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	
+}
+
+.split-area .right-area {
+	float: right;
+	width: 352px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+
+.split-area .left-area.right-bordered {
+	border-right: 1px solid #cbcbcb;
+}
+
+.split-area .left-area .inner {
+	width: 740px;
+}
+
+.split-area .right-area .inner {
+
+}
+
+.home-main-banner {
+	position: relative;	
+}
+
+.home-main-banner .img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+.home-main-banner .banner-desc {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+
+.home-main-banner .banner-desc .category {
+	display: block;
+	color: #fff;
+	top: 25px;
+	left: 25px;
+	font-size: 22px;
+	position: absolute;
+}
+
+.home-main-banner .banner-desc .post-meta {
+	position: absolute;
+	bottom: 50px;
+	left: 20px;
+	right: 20px;
+	text-align: center;
+
+	line-height: 1.4;
+}
+
+.home-main-banner .banner-desc .post-meta .post-title {
+	font-size: 38px;
+	color: #0e152b;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+.home-main-banner .banner-desc .post-meta .post-excerpt {
+	font-size: 20px;
+	color: #0e152b;
+}
+
+.home-featured-posts {
+	margin-left:  27px;
+}
+
+.featured-post {
+	position: relative;
+}
+
+.featured-post .category {
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+.featured-post .post-desc {
+	line-height: 1.25;
+	margin-bottom: 15px;
+}
+.featured-post .post-title {
+	font-size: 26px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.featured-post .post-excerpt {
+	font-size: 18px;
+}
+
+.featured-post .tb {
+	display: block;
+	float: right;
+	margin-left: 25px;
+}
+
+.featured-post .post-meta {
+	color: #6f6f6f;
+	font-size: 14px;
+}
+
+.featured-post a:hover .post-title {
+	text-decoration: underline;
+}
+
+.home-featured-posts .gap {
+	margin: 40px auto;
+	background: #cbcbcb;
+	height: 1px;
+}
+.home-full-banner {
+	margin-bottom: 30px;
+}
+.home-full-banner img {
+	display: block;
+}
+
+.home-tab-content {
+	border-top: 3px solid #000;
+	background: #f7f7f7;
+	
+	margin-bottom: 40px;
+}
+
+.home-tab-content .inner {
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-bottom: 30px;
+}
+
+.home-tab-content .tab-menu {
+	border-bottom: 1px solid #cbcbcb;
+	height: 40px;
+	margin-bottom: 20px;
+}
+
+
+.home-tab-content .tab-menu li  {
+	float: left;
+}
+
+.home-tab-content .tab-menu li a {
+	display: block;
+	font-size: 18px;
+	color: #202020;
+	line-height: 40px;
+	white-space: nowrap;
+	padding: 0 35px;
+}
+.home-tab-content .tab-menu li.active a {
+	border: 1px solid #cbcbcb;
+	border-bottom-color: #f7f7f7;
+	-webkit-border-radius: 5px 5px 0 0;
+	   -moz-border-radius: 5px 5px 0 0;
+	        border-radius: 5px 5px 0 0;
+	background: #f7f7f7;
+}
+
+.tab-content .left-area {
+	width: 710px;
+	float: left;
+}
+
+.tab-content .left-area .post-item {
+	position: relative;
+	padding: 0 210px 0 100px;
+	min-height: 122px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 20px;
+}
+
+.tab-content .left-area .post-item:last-child {
+	margin-bottom: 0;
+	border-bottom: 0;
+}
+
+.tab-content .left-area .post-item .date {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 14px;
+	color: #6f6f6f;
+}
+
+.tab-content .left-area .post-item .tb {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.tab-content .left-area .post-item .category {
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+
+.tab-content .left-area .post-item .post-desc {
+	margin-bottom: 10px;
+}
+
+.tab-content .left-area .post-item .post-title {
+	font-size: 26px;
+	line-height: 1.2;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.tab-content .left-area .post-item .post-excerpt {
+	font-size: 18px;
+	line-height: 1.3;
+}
+
+.tab-content .left-area .post-item .post-meta {
+	color: #6f6f6f;
+}
+
+.tab-content .left-area .post-item .post-meta .author {
+	margin-right: 26px;
+}
+
+.tab-content .left-area .post-item a:hover .post-title {
+	text-decoration: underline;
+}
+.tab-content .right-area {
+	float: right;
+	width: 380px;
+}
+
+.tab-content .right-area .post-item {
+	width: 292px;
+	margin: 0 auto 30px;
+}
+
+.tab-content .right-area .post-item .category {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.tab-content .right-area .post-item .post-box {
+	background: #fff;
+}
+
+.tab-content .right-area .post-item .tb {
+	display: block;
+	width: 100%;
+}
+
+.tab-content .right-area .post-item .post-excerpt {
+	padding: 30px; 
+	text-align: center;
+	line-height: 1.5;
+}
+
+.tab-content .right-area .post-item .post-excerpt p {
+	margin-bottom: 10px;
+}

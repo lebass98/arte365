@@ -1,0 +1,83 @@
+.arte365-sitemap {
+	padding: 20px 0;
+}
+.arte365-sitemap .logo {
+	background: url(../img/logo-h.png) 50% 50% no-repeat;
+	margin: 0px auto 30px auto;
+	width: 90px;
+	height: 70px;
+	text-indent: -999em;
+	overflow: hidden;
+}
+
+.sitemap-links .nav-menu,
+.sitemap-links .footer-menu {
+	max-width: 280px;
+	margin: 0 auto;
+}
+
+.sitemap-links .footer-menu,
+.sitemap-links .nav-menu > li {
+	margin-bottom: 20px;
+	border: 1px solid #d6d6d6;
+	background: #fff;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+
+
+.sitemap-links .footer-menu .menu-header,
+.sitemap-links .nav-menu > li > a {
+	background: #555555;
+	display: block;
+	text-align: center;
+	font-size: 26px;
+	font-weight: 600;
+	color: #fff;
+	line-height: 1.6;
+	padding: 30px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.sitemap-links .footer-menu .menu-header .sub,
+.sitemap-links .nav-menu > li > a  .sub {
+	font-size: 14px;
+	display: block;
+	margin-top: 10px;
+	font-weight: 400;
+}
+
+
+.sitemap-links .footer-menu .menu-body,
+.sitemap-links .nav-menu > li .sub-menu {
+	padding: 15px 30px;
+}
+
+
+.sitemap-links .footer-menu .menu-body .sub,
+.sitemap-links .nav-menu > li .sub-menu .sub {
+	display: none;
+}
+
+.sitemap-links .footer-menu .menu-body li,
+.sitemap-links .nav-menu > li .sub-menu > li {
+	margin: 15px 0;
+}
+
+.sitemap-links .footer-menu .menu-body li > a,
+.sitemap-links .nav-menu > li .sub-menu > li > a {
+	font-size: 18px;
+}
+
+
+.sitemap-links .footer-menu .menu-body li > a:before,
+.sitemap-links .nav-menu > li .sub-menu > li > a:before {
+	content:'•';
+	display: inline;
+	margin-right: 5px;
+	color: #6f6f6f;
+}

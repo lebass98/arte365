@@ -1,0 +1,841 @@
+.wrapper {
+	position:relative;
+	width: 100%;
+}
+
+/* body.home #header .container{
+	background:rgba(0, 0, 0, 0.5)
+} */
+
+/* .category #header .container, .page #header .container, .blog #header{
+	background:#333;
+} */
+
+body #header{
+	/* top:0; */
+	top:140px;
+	/* left:0; */
+	width:100%;
+	position:fixed;
+	background: rgba(56, 56, 56, 1);
+	z-index:101;	
+}
+body.home #header {
+	background: none
+}
+
+body.home #header  .container{
+	max-width: 1600px;
+	top:0;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+#header .container {
+	position:relative;
+	max-width: 1600px;
+	height:100px;
+	margin: 0 auto;
+	padding: 0 30px;
+	box-sizing:border-box;
+	z-index:100;
+    /* background: rgba(0, 0, 0, 0.2); */
+}
+.single  #header .container, .search #header .container{
+	position:relative;
+	/* background:#383838; */
+}
+
+.single  #header {
+	top:0;
+}
+
+body .solid#header{
+	top:0;
+	left:0;
+	width:100%;
+	max-width:100%;
+	position:fixed;
+	background: rgba(56, 56, 56, 0.88);
+	z-index:100;	
+	transform:none
+}
+
+.home #header.solid{
+	top:0;
+}
+
+.tag #header{background:#333;}
+
+.archive header, .page.page-id-74904 header, .page-id-51291 header, .page-id-20286 header, .page-id-436 header{
+background: rgba(56, 56, 56, 0.88);	
+}
+
+
+.home #header {
+	
+}
+
+#header {
+	position:absolute;
+	top:0;
+	left:50%;
+	width:100%;
+	height:100px;
+	margin-bottom: 30px;
+	transform:translateX(-50%);
+	z-index: 99;
+	background: rgba(56, 56, 56, 0.88);
+}
+
+body.home  #header.solid .container{background:none;top:0;}
+
+#header .top-area {
+	float:left;
+	height: 85px;
+	position: relative;
+	border-bottom: 1px solid #cbcbcb;
+}
+#header .logo {
+	background: url('http://arte365.kr/wp-content/uploads/2019/06/header-logo.png') 50% 50% no-repeat;
+	width: 180px;
+	height: 50px;
+	-moz-background-size: 180px auto;
+	-o-background-size: 180px auto;
+	-webkit-background-size: 180px auto;
+	        background-size: 180px auto;
+    position: absolute;
+    left: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#header .logo a {
+	display: block;
+	text-indent: -999em;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+#header .bottom-area {
+	position: relative;
+	float:right;
+    right: 70px;
+	/* border-bottom: 3px solid #202020; */
+}
+
+#header #nav {
+	float: left;
+}
+
+#header .gnb > ul > li {
+	float: left;
+	position: relative;
+	height:55px;
+	padding:22px 0;
+	margin:0 25px;
+	/* box-sizing:border-box; */
+}
+
+#header .gnb > ul > li:nth-child(-n+5){
+	padding:10px 0;
+}
+
+#header .gnb > ul > li > a {
+	display: block;
+	line-height: 53px;
+	white-space: nowrap;
+	color: #111;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'arteBasic' !important;/* 250609 아르뗴 서체 변경 */
+}
+
+#header .gnb > ul > li button{
+	display:none;
+}
+
+/* #header .gnb > ul > li.on button{
+	display:block;
+	position:absolute;
+	bottom:-33px;
+	left:-70px;
+	border:none;
+	width:180px;
+	height:55px;
+	background: rgba(0, 0, 0, 0.5);
+	font-size:16px;
+	letter-spacing:0.05em;
+	color:#fff;
+	background:url('/wp-content/uploads/2019/07/gnb_caption_bg.png') no-repeat 0 0;
+	line-height:60px;
+	cursor:pointer;
+} */
+
+#header .gnb > ul > li.on button span{
+	color:#ff8274;
+}
+
+/* #header .gnb > ul > li.on button:before{
+	position:absolute;
+	top:0;
+	left:50%;
+	width:18px;
+	height:10px;
+	background:url('/wp-content/uploads/2019/07/gnb_btn_cap.png') no-repeat 0 0;
+	transform:translateX(-50%);
+	content:"";
+} */
+
+#header .gnb > ul > li:hover > a,
+#header .gnb > ul > li > ul > li > a:hover,
+#header .gnb > ul > li.current-menu-item > a,
+#header .gnb > ul > li.current-menu-parent > a {
+	color: #ff7666;
+}
+
+#header .gnb > ul > li > .sub-menu {
+	position: absolute;
+	top: 100%;
+	left: -40px;
+	background: #000;
+	background: rgba(0,0,0,.85);
+	padding: 15px 0;
+	opacity: 0;
+	visibility: hidden;
+	/* transition: all 300ms ease-out; */
+}
+
+#header .gnb > ul > li > .sub-menu > li > a {
+	display: block;
+	white-space: nowrap;
+	color: #fff;
+	font-size: 16px;
+	padding: 10px 40px 10px 30px;
+}
+
+#header .gnb > ul > li:hover > .sub-menu {
+	opacity: 1;
+	visibility: visible;
+}
+
+.search-form {
+	padding:25px 36px ;
+	box-sizing:border-box;
+	border-radius:3px;
+	box-shadow:6px 6px 16px rgba(0,0,0,0.18);
+	background:#f9f9fb;
+}
+.search-form.on{
+	display:block;
+	-webkit-animation: search_shrink .1s 1 cubic-bezier(0.04, 0.16, 0.27, 1.55);
+	transform:translateX(-50%);
+} 
+.search-form.on:before{
+	position:absolute;
+	top:-7px;
+	right:86px;
+	width:13px;
+	height:7px;
+	background:url('/wp-content/uploads/2019/07/box_pointer_top.png') no-repeat 0 0;
+	content:""
+}
+
+.search-form select {
+	border: 0;
+	font-size: 18px;
+	height: 100%;
+	width:168px;
+	padding:0 5px 0 20px;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #e0e0e0;
+    border-top: 1px solid #9a9a9a;
+    border-left: 1px solid #9a9a9a;
+    box-sizing: border-box;
+}
+
+.menu-all{
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:510px;
+	background:#fff;
+	box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.25);
+	z-index:10;
+}
+.menu-all.on{
+	display:block;
+}
+
+.menu-all .top{
+	padding:10px 30px;
+	box-sizing:border-box;
+	border-bottom:1px solid #ddd;
+	height:auto;
+}
+
+.menu-all button{
+	float:right;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 57px;
+	height: 57px;
+	border: 1px solid #dddddd;
+	background:#fff
+}
+
+.menu-all button span{
+	position: relative;
+	display: block;
+	width: 23px;
+	height: 1px;
+	background: #000;
+}
+.menu-all button span:before{
+	position: absolute;
+	top: -10px;
+	left: 0;
+	width: 23px;
+	height: 1px;
+	background: #000;
+	content: '';
+	transform:rotate(0);
+	transition:all .5s cubic-bezier(0.03, 0.49, 0.51, 1.32)
+}
+
+.menu-all button span:after{
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	width: 23px;
+	height: 1px;
+	background: #000;
+	content: '';
+	transform:rotate(0);
+	transition:all .5s cubic-bezier(0.03, 0.49, 0.51, 1.32)
+}
+
+.menu-all button.on span{background:transparent}
+.menu-all button.on span:before{margin-top:10px;transition:all .5s cubic-bezier(0.03, 0.49, 0.51, 1.32);transform:rotate(45deg);}
+.menu-all button.on span:after{margin-bottom:10px;transition:all .5s cubic-bezier(0.03, 0.49, 0.51, 1.32);transform:rotate(-45deg);}
+
+.menu-all h1{
+    float: left;
+    width: 150px;
+    height: auto;
+    margin: 13px 0;
+}
+.menu-all .list{
+	width:100%;
+	height:514px;
+	padding:25px 0;
+	box-sizing:border-box;
+}
+.menu-all .list .inner{
+	max-width:1320px;
+	margin: 0 auto;
+	height:100%;
+}
+.menu-all .list ul{
+	display:flex;justify-content:space-between;
+}
+.menu-all .list ul li{
+	width:16%;
+	padding-left:30px;
+	box-sizing:border-box;
+	border-left:1px solid #ebebeb;
+}
+.menu-all .list ul li:first-child{
+	border-left:none;
+}
+.menu-all .list ul li p:first-child{
+	margin-bottom:0;
+	font-size:28px;
+	font-weight:bold;
+}
+.menu-all .list ul li p:first-child{
+	margin-bottom:35px;
+}
+.menu-all .list ul li p + p a{
+	height:20px;
+	margin-bottom:12px;
+	font-size:17px;
+}
+
+.menu-all .list ul li:last-child{
+	border-right:none;
+}
+.menu-all .list ul li:last-child a{
+	font-size:17px;
+}
+
+.menu-all .list ul li a{
+	display:inline-block;
+	height:28px;
+	font-size:26px;
+}
+.menu-all .list ul li a:hover{
+/* 	border-bottom:2px solid #f7a1a4; */
+	box-sizing:border-box;
+	color:#ee0015;
+}
+
+.appearance .search-form select {
+	width:167px;
+	height:100%;
+	background:#fff url('http://arte365.kr/wp-content/uploads/2019/07/clamp_down.png') 90% 50% no-repeat;
+	padding: 10px 20px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius:3px;
+	border:1px solid #e0e0e0;
+	border-top:1px solid #9a9a9a;
+	border-left:1px solid #9a9a9a;
+}
+
+.search-form input {
+	width:calc(100% - 181px);
+	height: 100%;
+	margin-left:10px;
+	border: 0;
+	font-size: 18px;
+	color: #000;
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	        border-radius: 0;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+	padding: 10px  10px;
+	vertical-align: top;
+	background:#fff;
+	border-radius:3px;
+	border:1px solid #e0e0e0;
+	border-top:1px solid #9a9a9a;
+	border-left:1px solid #9a9a9a;
+	box-sizing:border-box;
+}
+
+.search-form button[type="submit"] {
+	position:absolute;
+	top:0;
+	right:0;
+	overflow: hidden;
+	width: 60px;
+	height:60px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background:transparent url('http://arte365.kr/wp-content/uploads/2020/06/icon-finder.png') 50% 50% no-repeat;
+	-moz-background-size: 28px 28px;
+	-o-background-size: 28px 28px;
+	-webkit-background-size: 28px 28px;
+	background-size: 28px 28px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	cursor: pointer;
+	font-size: 18px;
+	color: #0e152b;
+	text-indent: -999em;
+	vertical-align: top;
+}
+.search-form form{
+	height:60px;
+	position:relative;
+}
+
+#main {
+	overflow-x:hidden;
+	width:100%;
+	padding-top:100px
+}
+.home #main{
+	padding-top:0;
+	/* padding-top:100px; */
+	
+}
+.home #main .container{
+	/* padding-top:140px; */
+	overflow:visible;
+}
+
+.single #main .container{
+	overflow:visible;  
+}
+
+#main .container{
+	overflow:hidden;
+	/* position:relative; */
+	max-width:1400px;
+    margin:0 auto;
+    padding: 0;
+	/* padding-top:100px; */
+}
+
+#main .related-posts .container{
+	padding-top:0;
+}
+
+#main .post-comment .container{
+	padding-top:0;
+}
+
+#footer {
+	position: relative;
+	width:100%;
+	background: #393939;
+	color: #fff;
+	font-weight: 300;
+}
+#footer .container{
+	position:relative;
+	max-width:1400px;
+	margin: 0 auto
+}
+
+#footer .inner {
+	padding: 26px 0;
+}
+#footer .company-info {
+	margin-bottom: 30px;
+	position: relative;
+    letter-spacing: 0px;
+}
+
+#footer .company-info .logo {
+	background: url(../img/logo-company.png) 50% 50% no-repeat;
+	width: 244px;
+	height: 33px;
+	-moz-background-size: 244px 33px;
+	  -o-background-size: 244px 33px;
+	     -webkit-background-size: 244px 33px;
+	        background-size: 244px 33px;
+	float: left;
+	margin-right: 32px;
+}
+
+#footer .company-info .logo a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-indent: -999em;
+	overflow: hidden;
+}
+
+#footer .company-info p {
+	margin-bottom: 6px;
+	color:#888888;
+}
+#footer .company-info p strong{
+	font-weight:normal;
+	color:#fff;
+}
+
+#footer .footer-menu {
+	margin-bottom: 30px;
+}
+
+#footer .footer-menu a {
+	color: #fff;
+	white-space: nowrap;
+}
+
+
+#footer .footer-menu a:hover {
+	text-decoration: underline;
+}
+
+#footer .footer-menu li {
+	display: inline-block;
+}
+
+#footer .footer-menu li:after {
+	content: '|';
+	margin: 0 8px; 
+	color: #6f6f6f;
+}
+#footer .footer-menu li:last-child:after {
+	content: none;
+}
+
+#footer .split {
+	margin: 0 8px; 
+	color: #6f6f6f;
+
+}
+
+#footer .copy {
+	font-size: 12px; 
+	letter-spacing: 0;
+	color:#888;
+}
+
+#footer .btn-top {
+	position: absolute;
+	top: 0;
+	/* bottom: 0; */
+	right: 0;
+	width: 44px;
+	height: 44px;
+	background: #494949;
+	background: #ff7667;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-image: url(/wp-content/uploads/2019/07/clamp_up_w.png);
+	-moz-background-size: 20px auto;
+	  -o-background-size: 20px auto;
+	     -webkit-background-size: 20px auto;
+	        background-size: 20px auto;
+	cursor: pointer;
+	text-indent: -999em;
+	overflow: hidden;
+	display: block;
+}
+
+#main.response .sns-linker{
+	position:fixed;
+	top:30% !important;
+	margin-top:0;
+	transition:all .5s ease;
+	transform:translateY(-50%);
+}
+
+.sns-linker{
+	position:absolute;
+	top:0;
+	right:10px;
+	display:flex;
+	flex-direction:column;
+	margin-top:110px;
+	z-index:999;
+}
+.sns-linker a{
+	display:block;
+	width:42px;
+	line-height:41px;
+	border:1px solid #d9d9d9;
+	text-align:center;
+	background:#fff;
+}
+.sns-linker a + a{
+	border-top:none;
+}
+
+.archive.category .post-list .post-item{
+	width:321px;
+}
+
+.archive.category.category-2806  .post-list .post-item{
+	width:100%;
+	height:auto;
+}
+
+.search   .post-list .post-item{
+	height:auto;
+}
+
+.search   .post-list .post-item .post .post-tb{
+/* 	width:300px !important;
+	height:189px; */
+	width:323px !important;
+	height:185px;
+}
+
+.blog #header, .search #header{  background: #333; }
+.blog #header.solid, .search #header.solid{background:rgba(56, 56, 56, 0.88)}
+.page-id-39807 #header, .page-id-20289 #header{background:#333;}
+.page-id-39807 #header.solid, .page-id-20289 #header.solid{background:rgba(56, 56, 56, 0.88)}
+
+
+/* 현장소식 */
+.category-2806 .news_list .post-list .post-item .post .post-news-cont{display:none}
+.category-2806 .news_list .post-list .post-item .post .post-tb{display:none}
+.category-2806 .news_list .post-list .post-item .post .post-desc{padding-left:0;}
+.post-list .post-item .post .post-desc.note{padding-left:80px}
+
+/* 20230630 개편 gnb 추가 */
+#header .gnb > ul {display: flex; align-items: center;}
+#header .gnb > ul > li {margin: 0;}
+
+/* 20230704 footer 추가 */
+#footer .container {position: relative; max-width: 1400px;}
+#footer .inner {position: relative;}
+
+@media print {
+    #header,
+    #footer {
+    	display: none;
+    }
+}
+
+/* tagble */
+.table_basic{display:table;width:100%}
+.table_basic caption{display:none;}
+.table_basic th{background:#ddd;font-weight:bold;  border:1px solid #ccc;  padding: 15px 0;    font-size: 16px;}
+.table_basic td{vertical-align:top;  padding: 15px 0;  border:1px solid #ccc;  font-size: 16px;text-align:center;}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+    color: #3d7cca;
+	}
+
+    /* 20240618 2024 개편 작업 */
+    #header {height: 90px; margin-bottom: 0;}
+    body.home #header {border-bottom: 1px solid #F2F6FA; background: #fff;}
+    body.home #header .container {max-width: 1400px; height: 100%; padding: 0; background: none;}
+    #header .container {height: 90px; max-width: 1400px; padding: 0;}
+    #header #nav {height: 100%;}
+    #header .gnb {height: 100%;}
+    #header .gnb > ul {height: 100%;}
+    #header .logo {left: 0; width: 170px; height: 33px; background: url(https://arte365.kr/wp-content/uploads/2024/08/header-logo.png) no-repeat 50% 50%; background-size: 170px auto;}
+    #header .bottom-area {right: 0; height: 100%;}
+    #main .container {max-width: 100%}
+    body.home #header.solid .container {background: #fff;}
+    .single #header .container, .search #header .container {background: #fff; border-bottom: 1px solid #F2F6FA;}
+
+    /* 20240627 2024 아르떼 개편 footer */
+    #footer {background: #fff; color: #111; border-top: 2px solid #111; overflow: hidden;}
+    #footer .inner {padding: 25px 0 57px; box-sizing: border-box;}
+    /* #footer .company-info .logo {width: 253px; height: 28px; margin-right: 0; margin-bottom: 20px; background: url(https://arte365.kr/wp-content/uploads/2024/08/footer-logo.png) no-repeat center center; float: none;} 20250210 푸터로고 교체  */
+    #footer .company-info .logo {width: 205px; height: 28px; margin-right: 0; margin-bottom: 20px; background: url('https://arte365.kr/wp-content/uploads/2025/02/footer-logo_2025.png') no-repeat center center; float: none;}
+    #footer .btn-top {top: auto; bottom: 91px; z-index: 2; width: 86px; height: 86px; background: url(https://arte365.kr/wp-content/uploads/2024/08/footer-top.png) no-repeat center center; background-size: 100% 100%;}
+    #footer .company-info {margin-bottom: 22px;}
+    #footer .company-info p {margin-bottom: 0; font-size: 17px; line-height: 26px; color: #111; font-weight: 400; /* 20250211 푸터 하단정보 arte 서체 적용 */ font-family: 'arteBasic' !important;}
+    #footer .company-info p > span {position: relative; font-weight: bold; /* 20250211 푸터 하단정보 arte 서체 적용 */ font-family: 'arteBasic' !important; margin-right: 4px;}
+    #footer .company-info p > span::after {position: absolute; bottom: 2px; right: 0px; width: 5px; height: 16px; background: url(https://arte365.kr/wp-content/uploads/2024/08/icon-right.png) no-repeat center center; background-size: 100% 100%; content: '';}
+    #footer .company-info p > span::before {position: absolute; bottom: 2px; left: 43px; width: 5px; height: 16px; background: url(https://arte365.kr/wp-content/uploads/2024/08/icon-left.png) no-repeat center center; background-size: 100% 100%; content: '';}
+    #footer .copy {font-size: 14px; font-weight: 400; line-height: 20px; color: #666; /* 20250211 푸터 하단정보 arte 서체 적용 */ font-family: 'arteBasic' !important;}
+
+    /* 20240716 2024 아르떼 개편 아르떼 소개 페이지 */
+    #main {padding-top: 90px;}
+    #main .container.container_page {max-width: 1400px;}
+
+    /* 20240730 2024 아르떼 개편 아르떼 공통 서브 페이지 */
+    .archive.category .post-list .post-item {width: 320px;}
+
+    /* 20240814 2024 아르떼 개편 에디토리얼 header 수정 */
+    body #header {background: #fff; border-bottom: 1px solid #F2F6FA;}
+    body .solid#header {background: #fff;}
+
+    /* 20240816 2024 아르떼 개편 header 수정 */
+    #header .gnb > ul > li:nth-child(-n+6) {width: 110px; padding: 10px 0;}
+
+    /* 20240820 2024 아르떼 개편 통합검색 팝업 */
+    .search-form input {width: calc(100% - 182px);}
+
+    /* 20240820 2024 아르떼 개편 통합검색 페이지 */
+    .blog #header, .search #header {background: #fff;}
+    .blog #header.solid, .search #header.solid {background: #fff;}
+
+/* ======================================================================================================================================================
+#CSS ANIMATION
+====================================================================================================================================================== */
+
+@-webkit-keyframes search_shrink {
+  0% { opacity:1; -webkit-transform: scale(1); transform: scale(0); }
+  75% {opacity:1;}
+  100% { opacity:1; -webkit-transform: scale(0); transform: scale(1);
+  }
+}
+
+@keyframes search_shrink {
+  0% { opacity:1; -webkit-transform: scale(1); transform: scale(0); }
+  75% {opacity:1; }
+  100% { opacity:1; -webkit-transform: scale(0); transform: scale(1);}
+}
+
+@-webkit-keyframes av-load8 {
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@keyframes av-load8 {
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% {-webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+/* 이벤트배너 위치조정 */
+.home .event_banner{display:block;height:0;}
+ .home .event_banner.slideup{display:none;height:0;}
+ .event_banner{display:block;position:relative;max-width:1400px;margin:0 auto;top:0;transition:all .5s ease}
+ .event_banner img {max-width: none !important; height:auto;}
+
+/*  .event_banner{display:block;position:relative;max-width:1400px;margin:0 auto;top:0;transition:all .5s ease} */
+ .event_banner button{position:absolute;top:20px;right:20px;width:30px;height:30px;background:#fff;opacity:0;cursor:pointer;}
+/*  .home #header{	top:140px;} */
+ .home #header.moveUp{top:0;}
+
+
+/* 이벤트 서브페이지 */
+ .single #header, .category #header, .page-id-51291 #header, .page-id-20286 #header, .page-id-436 #header, .post-type-archive-sublist #header,.post-type-archive-subject #header, .page-id-74904 #header , .page-id-39807 #header, .page-id-20289 #header{
+ 	background:#333;
+ 	background:rgba(56, 56, 56, 0.86); 
+ 	top:0;
+ }
+
+.single #header.solid, .category #header.solid, .page-id-51291 #header.solid, .page-id-20286 #header.solid, .page-id-436 #header.solid, .post-type-archive-sublist #header.solid,.post-type-archive-subject #header.solid, .page-id-74904 #header.solid, .page-template-default #header.solid{
+	background:rgba(56, 56, 56, 0.88);
+	top:0;
+}
+
+.desktop .event_wrap, .single .event_wrap, .category .event_wrap, .page-id-74904 .event_wrap, .page-id-39807 .event_wrap, .page-id-20289 .event_wrap, .page-id-51291 .event_wrap, .page-id-20286 .event_wrap, .page-id-436 .event_wrap{
+	width:100%;background:#f2f2f2;
+}
+
+@media screen and (max-width:1400px){
+/* 	body{width:1400px;} */
+	body{width:100%;}
+	#footer{width:1400px;}
+
+	.menu-all .list ul {display: unset; justify-content: spae-between;}
+	.menu-all .list ul li {width: 100%;}
+	.menu-all .list ul li a {margin-right: 20px;}
+	.menu-all .list ul li p {display:inline-block;}
+	.menu-all .list ul li p:first-child {margin-bottom: 20px;}
+	.menu-all .list ul li:last-child p {width:100%;display:block;}
+	.menu-all .list ul li:last-child p + p { width: 24%;display:inline-block;}
+
+}
+
+@media screen and (max-width:1024px){
+#header .gnb > ul > li:nth-child(-n+5){	display:none;padding:10px 0;}
+.sns-linker{display:none;}
+
+.container .sch-wrap {width: 80%;}
+}
+
+
+@media screen and (max-width:900px){
+	.container .sch-wrap {padding: 40px 30px;}
+	.container .search-form {padding: 25px 30px;}
+}
+
+
+@media screen and (max-width:800px){
+	#footer .company-info .logo {float: none;background: url(../img/logo-company.png) 50% 50% no-repeat;width: 180px; height: 33px; -moz-background-size: 100% auto;-o-background-size: 100% auto;-webkit-background-size: 100% auto; background-size: 100% auto; margin-bottom: 30px;}
+	#footer .company-info p {line-height:1.2rem;}
+	.menu-all .list {height: 700px; background-color: #fff;}
+	.menu-all .list ul li:last-child p + p {width: 100%; display: inline-block;}
+}
+
+@media screen and (max-width:640px){
+	.container .sch-wrap {padding: 20px;}
+	.container .search-form {padding: 20px 10px;}
+	.container .search-form .btn_close {top: 20px; right: 20px;}
+	.container .search-form .btn_close:before{position:absolute;top:15px;left:0;width: 25px;height:1px;background-color:#000;transform:rotate(45deg);content:"";}
+	.container .search-form .btn_close:after{position:absolute;top:15px;left:0;width:25px;height:1px;background-color:#000;transform:rotate(135deg);content:""}
+	.appearance .search-form select {width: 120px !important; padding: 10px 10px !important;}
+	.search-form input {width: calc(100% - 135px);}
+	.search-form input {font-size: 15px;}
+
+}

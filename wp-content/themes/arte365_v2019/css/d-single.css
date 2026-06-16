@@ -1,0 +1,767 @@
+.arte365-post-single {
+	/* position:relative; */
+	letter-spacing: -0.05em;
+}
+
+
+.arte365-post-single .post-header {
+}
+.arte365-post-single .post-header .post-top{
+	position:relative;
+	max-width:1000px;
+	margin:0 auto;
+}
+.arte365-post-single .post-category {
+	position:absolute;
+	top:0;
+	left:0;
+	margin-bottom: 24px;
+	line-height: 20px;
+}
+.arte365-post-single .post-category + div{
+	padding-top:60px;
+	text-align:center;
+}
+
+.arte365-post-single .post-category a {
+	display: inline-block;
+	font-size: 16px;
+	/* white-space: nowrap; */
+	word-break:keep-all;
+	vertical-align: top;
+
+}
+
+.post-list .post-item .post .post-news-cont{display:none}
+.post-list .post-item .post .news_only{display:none}
+.search .post-list .post-item .post .post-news-cont{overflow:hidden;display:block;height:74px;margin-bottom:20px;font-size:16px;line-height:1.6em;color:#555;}
+.post-news-cont p {overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;word-wrap: break-word;line-height: 1.5em;height: 4.5em;color: #888;}
+.search .post-list .post-item .post .post-desc{width:calc(100% - 373px)}
+
+.news_list .archive-body .left-area .archive-title{display:none}
+.news_list .archive-body .left-area{border-top:3px solid #000;background:#fff;}
+.news_list .post-list .post-item{width:100%;padding:30px 0;border-bottom:1px solid #dbdbdb;}
+.news_list .post-list .post-item .post .post-tb img{width:265px;height:158px;border:1px solid #dddddd;}
+.news_list .post-list .post-item .post .post-category{position:relative;display:inline-block;vertical-align:middle}
+.news_list .post-list .post-item .post .post-tb{float:left;width:325px;margin-bottom:0;border:none;}
+.news_list .post-list .post-item .post .post-desc{float:left;width:100%;}
+.news_list .post-list .post-item + .post-item{margin-left:0;}
+.news_list .post-list .post-item .post .post-small-title{display:none}
+.news_list .post-list .post-item .post .post-title{display:inline-block;width:80%;height:auto;margin-left:15px;margin-bottom:0;vertical-align:middle;}
+.news_list .post-list .post-item .post .post-meta{display:inline-block;vertical-align:middle;margin-bottom:0}
+.news_list .post-list .post-item .post .post-news-cont{display:block;margin-bottom:14px;overflow:hidden;max-height:78px;font-size:16px;color:#4a4a4a;line-height:26px;}
+.news_list .post-list .post-item .post .post-news-cont p{color:#4a4a4a;}
+.news_list .post-list .post-item .post .news_only{display:none;margin-left:15px;color:#838383;}
+.news_list .post-list .post-item .post .publisher{display:none}
+.news_list .post-list .post-item .post .post-date{float:right;width:auto;padding:20px 0;font-size:17px;}
+.is-parent-category .news_list .post-list .post-item .post .post-tb{}
+
+
+.share_wrap {display:none}
+
+.arte365-post-single .post-category a:hover {
+	text-decoration: underline;
+}
+
+.arte365-post-single .post-category .split {
+	color: #aaa;
+	vertical-align: top;
+	display: inline-block;
+	background: url(../img/icon-split.svg) 50% 50% no-repeat;
+	-webkit-background-size: auto 12px;
+	   -moz-background-size: auto 12px;
+	     -o-background-size: auto 12px;
+	        background-size: auto 12px;
+	width: 20px;
+	height: 20px;
+	text-indent: -999em;
+}
+
+.arte365-post-single .post-category .home {
+	background: url(../img/home.svg) 50% 50% no-repeat;
+	-webkit-background-size: 16px auto;
+	   -moz-background-size: 16px auto;
+	     -o-background-size: 16px auto;
+	        background-size: 16px auto;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	text-indent: -999em;
+	overflow: hidden;
+}
+
+.arte365-post-single .post-title {
+	max-width:700px;
+	margin:0 auto;
+	font-size: 46px;
+	line-height: 1.15;
+	margin-bottom: 30px;
+	font-weight: 500;
+}
+
+
+.arte365-post-single .post-small-title {
+	font-size: 24px;
+	margin-bottom: 20px;
+	line-height: 1.8rem;
+}
+
+
+.arte365-post-single .post-meta {
+	position:relative;
+	margin: 40px auto -1px;
+	height:60px;
+	/* border-top: 1px solid #333;
+	border-bottom: 1px solid #bababa; */
+	box-sizing:border-box;
+	color: #6f6f6f;
+	/* white-space: nowrap; */
+	line-height:58px;
+}
+
+.arte365-post-single .post-meta:before{
+	position:absolute;
+	top:0;
+	left:-100%;
+	width:300%;
+	height:1px;
+	background:#333;
+	content:"";
+	visibility:visible;
+}
+
+.arte365-post-single .post-meta:after{
+	position:absolute;
+	bottom:0;
+	left:-100%;
+	width:300%;
+	height:1px;
+	background:#bababa;
+	content:"";
+	visibility:visible;
+}
+
+.arte365-post-single .post-meta.mobile {
+	display:none;
+}
+
+.arte365-post-single .post-meta .inner{
+	max-width:1000px;
+	margin:0 auto;
+}
+
+.arte365-post-single .post-meta  span {
+	vertical-align: top;
+	display: inline-block;
+	font-size:17px;
+	color:#000;
+}
+
+.arte365-post-single .post-meta .pull-right span{
+	font-size:16px;
+	line-height: 57px;
+}
+
+.arte365-post-single .post-meta .pull-right span strong{
+	font-weight:normal;
+}
+
+.arte365-post-single .post-meta .pull-right span.comment{
+	margin:0 10px;
+}
+
+.arte365-post-single .post-meta  span.publisher{
+	font-weight:400;
+}
+
+.arte365-post-single .post-meta .arte365-share {
+	margin-left: 30px;
+	font-size: 0;
+	height: 30px;
+	display: inline-block;
+}
+
+
+.arte365-post-single .post-meta .arte365-share a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	background:#333 50% 50% no-repeat;
+
+	margin-left: 5px;
+	text-indent: -999em;
+	overflow: hidden;
+	vertical-align: top;
+	-webkit-border-radius:50% 50%;
+	 -moz-border-radius:50% 50%;
+	 border-radius:50% 50%;
+}
+
+.arte365-post-single .post-meta .arte365-share a:hover {
+	background-color: #f80038;
+}
+
+
+.arte365-post-single .post-meta .arte365-share a > span {
+	display: none;
+}
+
+
+.arte365-post-single .post-meta .arte365-share .btn-toggle {
+	display: none;
+}
+
+
+
+.arte365-post-single .post-meta .arte365-share a.addthis_button_facebook {
+	background-image:url(../img/icon-facebook.svg);
+	-webkit-background-size: auto 60%;
+	   -moz-background-size: auto 60%;
+	     -o-background-size: auto 60%;
+	        background-size: auto 60%;
+}
+.arte365-post-single .post-meta .arte365-share a.addthis_button_email {
+	background-image:url(../img/icon-email.svg);
+	-webkit-background-size: auto 44%;
+	   -moz-background-size: auto 44%;
+	     -o-background-size: auto 44%;
+	        background-size: auto 44%;
+}
+.arte365-post-single .post-meta .arte365-share a.addthis_button_twitter {
+	background-image:url(../img/icon-twitter.svg);
+	-webkit-background-size: auto 50%;
+	   -moz-background-size: auto 50%;
+	     -o-background-size: auto 50%;
+	        background-size: auto 50%;
+}
+.arte365-post-single .post-meta .arte365-share a.addthis_button_print {
+	background-image:url(../img/icon-print.svg);
+	-webkit-background-size: auto 55%;
+	   -moz-background-size: auto 55%;
+	     -o-background-size: auto 55%;
+	        background-size: auto 55%;
+}
+
+.arte365-post-single .post-body {
+	/*width: 870px;*/
+	margin: 0 auto 30px;
+}
+
+.arte365-post-single .post-content {
+	margin-bottom: 0;
+	font-size: 15px;
+	text-align:center;
+    margin-top: 40px;
+}
+.post-content + .likebtn_container{display:none;}
+
+.arte365-post-single .post-tags {
+	width:100%;
+	background: #f2f2f2;
+	box-sizing:border-box;
+	font-size: 12px;
+	position: relative;
+	min-height: 18px;
+
+}
+
+.arte365-post-single .post-tags .inner{
+	position:relative;
+	left: 19px;
+	max-width:1000px;
+	margin:0 auto;
+	padding: 30px 0;
+	}
+
+.arte365-post-single .post-tags .tags-title {
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: -30px;
+	width: 100px;
+	height: 100px;
+	line-height:100px;
+	text-align:center;
+	font-size:36px;
+	color:#f11134;
+	background-color:#fff;
+}
+
+/* .arte365-post-single .post-tags .tags-title {
+	overflow: hidden;
+	position: absolute;
+	left: 18px;
+	top: 50%;
+	width: 16px;
+	height: 16px;
+	background: url(../img/icon-tag.png) 50% 50% no-repeat;
+	transform:translateY(-50%);
+	text-indent: -9999em;
+} */
+
+
+
+.arte365-post-single .post-tags .tag-links {
+	padding-left: 147px;
+	line-height: 1.4;
+	text-align:left;
+}
+
+
+.arte365-post-single .post-tags .tag-links a {
+    display: inline-block;
+    height: 38px;
+    padding: 0 10px;
+    margin-bottom:6px;
+    box-sizing: border-box;
+    color: #333;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 2px;
+    line-height: 36px;
+    text-decoration: none;
+}
+
+
+
+.arte365-post-single .post-tags .tag-links a:hover {
+	color: #fff;
+	background-color:#434343;
+}
+
+.arte365-post-single .post-tags .tag-links .split {
+	margin-right: 6px;
+}
+
+
+/*ê¸°ì¡´ author í‘œì‹œ*/
+.arte365-post-single div.postall_w  div.postphotoin {
+	border-bottom: 0;
+	/* border-top: 2px solid #6f6f6f; 
+	padding: 15px 0;*/
+	position: relative;
+	margin-bottom: 0;
+}
+
+.arte365-post-single div.postall_w div.postphotoin dl dt {
+	/* padding:0 3%; */
+	padding:0;
+	text-align:left;
+	font-weight:600;
+	font-size: 15px;
+}
+
+.arte365-post-single div.postall_w div.postphotoin dl dd {
+	/* padding:0 3%; */
+	padding:0;
+	text-align:left;
+    font-size: 15px;
+	line-height: 28px;
+    font-weight: 300;
+}
+
+
+.related-posts {
+	padding: 40px 0;
+}
+
+.related-posts .container {
+	width: 870px;
+}
+
+.related-posts h3 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.related-post-list {
+	margin: 0 -10px;
+}
+.related-post-item {
+	width: 33.333333%;
+	float: left;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 10px;
+}
+
+.related-post-item .post-tb {
+	width: auto;
+	height: 235px;
+	overflow: hidden;
+	background: #eee url(../img/default-img.png) 50% 50% no-repeat;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	margin-bottom: 15px;
+}
+
+
+.related-post-item .post-category {
+	font-size: 16px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+
+.related-post-item .post-title {
+	font-size: 22px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	line-height: 1.3;
+}
+
+.related-post-item .post-excerpt,
+.related-post-item .post-small-title {
+	font-size: 16px;
+	line-height: 1.25;
+}
+
+
+/* 20220610 사이즈 및 폰트 추가 */
+.msize {display:none;}
+.mfont {display:none;}
+div.postall_w div.posttext {font-size:20px !important;}
+.arte365-post-single .post-title.zoom {zoom:108%;}
+.arte365-post-single .post-small-title.zoom {zoom:108%;}
+.arte365-post-single .post-meta span.publisher.zoom {zoom:108%;}
+.pull-right.zoom span {zoom:108%;}
+.pull-right.zoom span strong {zoom:108%;}
+.arte365-post-single .post-content.zoom .posttext {zoom:108%;}
+.arte365-post-single .post-content.zoom .posttext span {zoom:108%;} 
+.arte365-post-single .post-content.zoom .posttext.f_bold {zoom:108%;}
+.arte365-post-single .post-content.zoom .posttext strong {zoom:108%;}
+.arte365-post-single .post-content.zoom .posttext a {zoom:108%;}
+.arte365-post-single .post-content.zoom .posttit  {zoom:108%;}
+
+
+.arte365-post-single .post-title.maruburi {font-size:44px !important;font-family:MaruBurisemiBold !important;}
+.arte365-post-single .post-small-title.maruburi {font-family:MaruBurisemiBold !important;}
+.arte365-post-single .post-meta span.publisher.maruburi {font-family:MaruBuriSemiBold !important;}
+.pull-right.maruburi span {font-family:MaruBuriSemiBold !important;}
+.pull-right.maruburi span strong {font-family:MaruBuriSemiBold !important;}
+.arte365-post-single .post-content.maruburi .posttext {font-size:19px !important;font-family:MaruBuriSemiBold !important;}
+.arte365-post-single .post-content.maruburi .posttext span {font-family:MaruBuriSemiBold !important;} 
+.arte365-post-single .post-content.maruburi .posttext.f_bold {font-family:MaruBuriBold !important;}
+.arte365-post-single .post-content.maruburi .posttext strong {font-size:19px !important;font-family:MaruBuriBold !important;}
+.arte365-post-single .post-content.maruburi .posttext a {font-size:19px !important;font-family:MaruBuriSemiBold !important;}
+.arte365-post-single .post-content.maruburi .posttext dd {font-size:19px !important;font-family:MaruBuriSemiBold !important;}
+.arte365-post-single .post-content.maruburi .posttit  {font-family:MaruBuriBold !important;}
+.arte365-post-single .post-content.maruburi .posttext ul.list_dot li {font-family:MaruBurisemiBold !important;}
+.arte365-post-single .post-content.maruburi .posttextinin dl dt {font-family:MaruBurisemiBold !important;}
+.arte365-post-single .post-content.maruburi .posttextinin dl dd a {font-family:MaruBurisemiBold !important;}
+
+
+div.postall_w div.posttext table a {font-size:15px;}
+.arte365-post-single .post-content.maruburi .posttext table th {font-size:15px;font-family:MaruBuriBold !important;}
+.arte365-post-single .post-content.maruburi .posttext table td {font-size:15px;font-family:MaruBurisemiBold !important;}
+.arte365-post-single .post-content.maruburi .posttext table a {font-size:15px !important;font-family:MaruBuriSemiBold !important;}
+.arte365-post-single div.postall_w div.postphotoin a {font-family:'Noto Sans KR', sans-serif !important;}
+.arte365-post-single .post-content.maruburi div.postphotoin .posttext a {font-family:'Noto Sans KR', sans-serif !important;font-size:15px !important;}
+.arte365-post-single .post-content.maruburi .postphotoin .posttext  {font-family:'Noto Sans KR', sans-serif !important;}
+.arte365-post-single .post-content.maruburi .postphotoin .posttext {font-size:15px !important;}
+
+
+@media print {
+    .arte365-post-single .post-tags,
+    .related-posts {
+    	display: none;
+    }
+}
+
+/* 20180709 추가 */
+.single-post .sidebar{display:none}
+.sidebar.bar_mobile, .post-comment.bar_mobile, .related-posts.bar_mobile{display:none}
+.share-buttons{display:inline-block;margin-left:10px}
+.share-buttons li{display:inline-block;width:30px;height:30px;vertical-align:top;cursor:pointer}
+.share-buttons li a{display:block}
+.share-buttons li:nth-child(3){background:url('/wp-content/themes/arte365_v2017/img/icon/icon-mail.png') no-repeat 0 0;background-size: 100%;}
+.share-buttons li:nth-child(3):hover{background:url('/wp-content/themes/arte365_v2017/img/icon/icon-mail-on.png') no-repeat 0 0;background-size: 100%;}
+.share-buttons li:last-child{background:url('/wp-content/themes/arte365_v2017/img/icon/icon-print.png') no-repeat 0 0;background-size: 100%;}
+.share-buttons li:last-child:hover{background:url('/wp-content/themes/arte365_v2017/img/icon/icon-print-on.png') no-repeat 0 0;background-size: 100%;}
+#addon{display:none}
+/* .single .post-categories li:last-child{display:none} */
+.single .post-categories li:first-child{width:90px;height:90px;background:#ff7667;}
+.single .category-15 .post-categories li:first-child{display:block}
+.single .post-categories li a{display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:#fff;font-size:24px;text-align:center;line-height:1.3em}
+#progressbar{position:fixed;top:96px;left:0;height:4px;background:#ff7666;box-shadow:3px 0px 10px #2d2d2d;width:0%;z-index:999}
+
+
+
+/* 20250701 이재광 - 상단 고정 배너 있을때 프로그레스바 위치 조정 */
+/*
+.event_show.solid2 #progressbar {
+	top: 90px;
+}
+.event_show #progressbar {
+	top: 240px;
+}
+*/
+
+
+
+
+
+.page-id-51291 .entry_content, .page-id-39807 .entry_content{margin-bottom:50px;text-align:center;/* background:#f7f7f7 */}
+
+.search .post-list{padding:30px 0;border-top:3px solid #000}
+
+/* post move next, prev link */
+.post_move{ position:fixed; bottom:20.196vh; width: 249px; height: 210px; box-sizing:border-box; z-index:10;}
+.post_move::before{ content: ''; position: absolute; top: 50%; transform: translateY(-50%); display: block; width: 47px; height: 108px; background-color: #eee; background-size: 14px; background-repeat: no-repeat;}
+
+.post_move.next{right:0; padding-left: 47px;}
+.post_move.prev{left:0; padding-right: 47px;}
+.post_move.next::before{ left: 0; border-radius: 20px 0px 0px 20px; background-color: #EEF5FF; background-image: url('/wp-content/themes/arte365_v2019/img/arrow_right.svg'); background-position: center left 17px;}
+.post_move.prev::before{ right: 0; border-radius: 0px 20px 20px 0px; background-color: #FFEDED; background-image: url('/wp-content/themes/arte365_v2019/img/arrow_left.svg'); background-position: center right 17px;}
+
+.post_move p{ overflow: hidden; display: flex ; width: 100%; height: 100%; background-color: #fff; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);}
+.post_move.next p{ border-radius: 20px 0px 0px 20px;}
+.post_move.prev p{ border-radius: 0px 20px 20px 0px;}
+
+.post_move a{ height: 100%;}
+.post_move:hover a{ text-decoration: unset;}
+.post_move img{ display: block; width: 100%; height: 154px; object-fit: cover;}
+
+.post_move span{ display: flex; justify-content: center; align-items: center; width: 100%; height: 56px; margin-top: auto; padding: 8px; color: #111; font-size: 13px; font-weight: 400; line-height: 1.5; letter-spacing: -0.05em; transition: 0.3s;}
+.post_move a:hover span{ color: #ff5f4d; transition: 0.3s;}
+
+
+.post_move.off{width:47px; transition: 0.3s;}
+.post_move.off img,
+.post_move.off span{display:none}
+
+
+/* .arte365-post-single .post-tags{position:relative;} */
+.arte365-post-single .post-tags:before{position:absolute;top:0;left:-100%;width:1000%;height:100%;background-color:#f2f2f2;content:""}
+
+/* 220620 뉴스레터개편 */
+
+.unsubscribe {width:52%;margin:0 auto;}
+div.postall_w.newsletter_submit .unsubscribe .posttext {text-align:center;}
+.attention {padding: 50px 120px !important;}
+.container.newsletter .page-header {padding: 70px 40px;}
+.container.newsletter .entry_content {margin-bottom: 330px;}
+#main .container.newsletter {margin-bottom:0 !important;max-width: 100% !important;background:url('https://arte365.kr/wp-content/uploads/2022/newsletterBg.png') no-repeat 100% 100%;}
+div.postall_w.newsletter_submit.newBg {padding:0;padding-bottom: 120px;max-width:1400px !important;maargin:0 auto !important;background-color:transparent !important;text-align: left;}
+.arte365-newsletter.newBg .tit {display:inline-block;margin-bottom:40px;font-size:66px;font-weight:500;letter-spacing:-1px;background: #000000;line-height:101%;background: linear-gradient(to right, #000, #f11336); -webkit-background-clip: text; -webkit-text-fill-color: transparent;  color: transparent;}
+.arte365-newsletter.newBg .sub_tit {margin-bottom:40px;line-height:100%;font-size:28px;color:#000;letter-spacing:-1px;font-weight:500;}
+.arte365-newsletter.newBg .posttext {font-size:20px;color:#000;letter-spacing:-0.5px;}
+div.postall_w.newsletter_submit.newBg .post_box {float:left;background: linear-gradient(to right, #000, #000) !important;}
+div.postall_w.newsletter_submit.newBg .post_box form input {font-size: 24px; font-weight: 300;color: #000;line-height:70px;padding-bottom: 3px;}
+div.postall_w.newsletter_submit.newBg .post_box form input::placeholder {color: #000;line-height:70px;vertical-align: middle;}
+div.postall_w.newsletter_submit .post_box form .btn-submit { width: 140px !important; height: auto;  font-size: 24px; background: #f11336 !important;}
+.arte365-newsletter.newBg form input[type="email"] {width: calc(100% - 140px) !important;}
+.arte365-newsletter.mobile_news {display:none;}
+
+/* 20240626 2024 아르떼 개편 */
+/*.container .post-list.is-parent-category.vScroll {display: none !important;}*/
+
+/* 20240705 2024 아르떼 개편 */
+#progressbar {/* top: 90px; */ top: unset; box-shadow: none;} /* 20250804 red position top 값 제거
+게이지 시작점이 이미 약 5% 정도 차지하고 있어서 페이지 초기 진입 시 이벤트 배너와 프로그래스바가 겹치는 현상이 발생함.
+└ 그래서 프로그래스바를 기존 post-body가 아닌 header에 그려지도록 js 수정함(arte365@121.78.124.237:22:/home/arte365/www/wp-content/themes/arte365_v2019/js/common.js || 542 line).
+이벤트 배너 유무에 따라 헤더 높이를 수정할 때 프로그래스바도 자동으로 위치 조정되는 원리. */
+
+/* 기사 상세페이지 */
+.arte365-post-single .post-header {background: #FCFCFC;}
+.arte365-post-single .post-header .post-top {padding-top: 50px; box-sizing: border-box;}
+.arte365-post-single .post-category + div {padding-top: 0; text-align: left;}
+.arte365-post-single .post-title {max-width: 100%; margin: 0 0 30px; font-size: 40px; line-height: 56px; font-weight: bold; color: #111;}
+.arte365-post-single .post-category {position: static; margin-bottom: 10px; line-height: 0;}
+.arte365-post-single .post-small-title {margin-bottom: 40px; font-size: 20px; line-height: 32px; color: #111; font-weight: 500;}
+.arte365-post-single .post-meta:before {background: #111;}
+.arte365-post-single .post-meta:after {background: #999;}
+.arte365-post-single .post-meta span {font-size: 16px; color: #111;}
+.arte365-post-single .post-meta .pull-right span.comment {margin: 0 5px;}
+.arte365-post-single .post-content {margin-top: 50px;}
+
+/* 프로필 */
+.arte365-post-single div.postall_w div.postphotoin dl dt {color: #111; font-size: 18px; line-height: 28px; font-weight: bold;}
+.arte365-post-single div.postall_w div.postphotoin dl dd {color: #333; font-size: 16px; line-height: 26px;}
+
+/* 기사 상세페이지 키워드 */
+.arte365-post-single .post-tags .inner {display: flex; justify-content: center; left: 0; padding: 40px 0 40px; box-sizing: border-box;}
+.arte365-post-single .post-tags:before {background-color: #fff;}
+.arte365-post-single .post-tags .tags-title {display: none;}
+.arte365-post-single .post-tags .tag-links {padding-left: 0; text-align: center;}
+.arte365-post-single .post-tags .tag-links a {height: auto; padding: 6px 14px; font-size: 16px; line-height: 26px; font-weight: 400; color: #111; border: 1px solid #F9C9C9; border-radius: 999px;}
+.arte365-post-single .post-body {margin: 0 auto;}
+
+/* 기사 상세 코너별 기사보기 */
+.subject-posts {width: 100%;}
+.subject-posts_inner {max-width: 1400px; margin: 0 auto;}
+.subject-posts_tit__box {display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 20px;}
+.subject-posts h3 {font-size: 28px; line-height: 40px; font-weight: bold; color: #111;}
+.subject-posts button {width: 100px; padding: 5px 0 5px 17px; box-sizing: border-box; border-radius: 999px; border: 1px solid #E61E15; background: transparent; color: #E61E15; text-align: left; font-size: 16px; line-height: 26px; font-weight: 500; background: url(https://arte365.kr/wp-content/uploads/2024/08/icon-crossover.png) no-repeat center right 15px; background-size: 10px 10px;}
+.subject-posts button:hover {color: #fff; background: #ED1A3C url(https://arte365.kr/wp-content/uploads/2024/08/icon-crossover-w.png) no-repeat center right 15px; background-size: 10px 10px;}
+.subject-posts .posts-cont:first-child {border-top: 1px solid #111;}
+.subject-posts .posts-cont {box-sizing: border-box; border-bottom: 1px solid #DDDDDD;}
+.subject-posts .posts-cont:last-child {border-bottom: none;}
+.subject-posts .posts-cont > a {display: flex; flex-direction: row; align-items: center; width: 100%;}
+.subject-posts .posts-cont .posts-top {display: flex; flex-direction: row; align-items: center; width: 50%;}
+.subject-posts .posts-cont .posts-top > p {font-size: 20px; line-height: 30px; color: #111; font-weight: 500; white-space: nowrap; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;}
+.subject-posts .posts-cont > a:hover .posts-top > p {color: #111;}
+.subject-posts .posts-cont .posts-bottom {display: flex; flex-direction: row; align-items: center; justify-content: space-between; width: 50%;}
+.subject-posts .posts-cont .posts-bottom > p {font-size: 16px; line-height: 26px; font-weight: 500; color: #333; white-space: nowrap; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;}
+.subject-posts .posts-cont .posts-bottom > span {padding: 0 40px; box-sizing: border-box; font-size: 16px; font-weight: 400; line-height: 26px; color: #747478;}
+.subject-posts .posts-cont > a .posts-r {flex: none; display: inline-block; width: 136px; height: auto; color: #E61E15; font-size: 18px; line-height: 26px; font-weight: 500; text-align: center;}
+.subject-posts .posts-cont .posts-top > p .posts-comment {margin-left: 5px; font-size: 18px; color: #ED1A3C;}
+.subject-posts .posts-box.posts-box_mo {display: none;}
+.subject-posts__corner .post-tb{display:none;}
+.subject-posts.subject-posts__corner .posts-cont > a .publisher{display:none;}
+
+/* 기사 상세 최신 기사보기 */
+.related-posts {width: 100%;}
+.related-posts_inner {max-width: 1400px; margin: 0 auto;}
+.related-posts_tit__box {display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 20px;}
+.related-posts h3 {font-size: 28px; line-height: 40px; margin-bottom: 0; font-weight: bold; color: #111;}
+.related-posts button {width: 100px; padding: 5px 0 5px 17px; box-sizing: border-box; border-radius: 999px; border: 1px solid #E61E15; background: transparent; color: #E61E15; text-align: left; font-size: 16px; line-height: 26px; font-weight: 500; background: url(https://arte365.kr/wp-content/uploads/2024/08/icon-crossover.png) no-repeat center right 15px; background-size: 10px 10px;}
+.related-posts button:hover {color: #fff; background: #ED1A3C url(https://arte365.kr/wp-content/uploads/2024/08/icon-crossover-w.png) no-repeat center right 15px; background-size: 10px 10px;}
+.related-posts .posts-cont:first-child {border-top: 1px solid #111;}
+.related-posts .posts-cont {padding: 20px 0; box-sizing: border-box; border-bottom: 1px solid #DDDDDD;}
+.related-posts .posts-cont:last-child {border-bottom: none;}
+.related-posts .posts-cont > a {display: flex; flex-direction: row; align-items: center; width: 100%;}
+.related-posts .posts-cont > a:hover {color: #111;}
+.related-posts .posts-cont .posts-top {display: flex; flex-direction: row; align-items: center; width: 50%;}
+.related-posts .posts-cont .posts-top > p {font-size: 20px; line-height: 30px; color: #111; font-weight: 500; white-space: nowrap; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;}
+.related-posts .posts-cont .posts-bottom {display: flex; flex-direction: row; align-items: center; justify-content: space-between; width: 50%;}
+.related-posts .posts-cont .posts-bottom > p {font-size: 16px; line-height: 26px; font-weight: 500; color: #333; white-space: nowrap; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;}
+.related-posts .posts-cont .posts-bottom > span {padding: 0 40px; box-sizing: border-box; font-size: 16px; font-weight: 400; line-height: 26px; color: #747478;}
+.related-posts .posts-cont > a .posts-r {flex: none; display: inline-block; width: 136px; height: auto; color: #E61E15; font-size: 18px; line-height: 26px; font-weight: 500; text-align: center;}
+.related-posts .posts-cont .posts-top > p .posts-comment {margin-left: 5px; font-size: 18px; color: #ED1A3C;}
+.related-posts .posts-box.posts-box_mo {display: none;}
+
+/* 20240822 2024 개편 기사 필자 프로필 추가 */
+.arte365-post-single div.postall_w div.postphotoin dl dd {font-weight: 400; color: #111;}
+/* 20240822 2024 개편 기사 하단 키워드 추가 */
+.arte365-post-single .post-tags .tag-links a {color: #ff9a9a; border: 1px solid #ff9a9a;}
+.arte365-post-single .post-tags .tag-links a:hover {color: #fff; background: #ff9a9a;}
+.related-posts {padding: 80px 0; box-sizing: border-box;}
+/* 20240829 2024 개편 기사 하단 목록 추가 */
+.subject-posts .posts-cont > a:hover {color: #111;}
+/* 20240909 2024 개편 기사 하단 목록 추가 */
+.subject-posts .posts-cont > a .posts-r br {display: none;}
+
+
+@media screen and (max-width:1600px){
+	.post_move {display:none;}
+}
+
+@media screen and (max-width:1400px){
+	.arte365-post-single .post-meta:before{left:0;width:100%}
+	.arte365-post-single .post-meta:after{left:0;width:100%}
+	.arte365-post-single .post-tags:before{left:0;width:100%}
+	.arte365-post-single .post-tags .inner{width:1400px;max-width:100%;}
+	.arte365-post-single .post-tags .inner{left:0;width:100%;}
+	.single .post_move {display:none !important;}
+	.container .post-list.is-parent-category::-webkit-scrollbar {
+		width: 6px;
+	}
+	.container .post-list.is-parent-category::-webkit-scrollbar-thumb {
+		background-color: #464646;
+		border-radius: 6px;
+	}
+	.container .post-list.is-parent-category::-webkit-scrollbar-track {
+		 background-color: #dcdcdc;
+		border-radius: 6px;
+		box-shadow: inset 0px 0px 5px white;
+	}
+
+	#main .container.newsletter {background-size:contain;}
+}
+
+@media screen and (min-width:1400px){
+	.wrapper .related-posts {overflow:hidden;width:100%;}
+	.container {width:100%;}
+	.container .post-list.is-parent-category {width:100%;box-sizing: border-box;flex-flow: row wrap; -ms-display: flexbox; display: flex; display: -moz-box; display: -ms-flexbox; display: -webkit-flexd; display: flex;}
+	.container .keywords .post-list.is-parent-category{margin-bottom:-30px;}
+	.container .post-list.is-parent-category.vScroll {overflow-y:scroll;width:100%;height:560px;box-sizing: border-box;flex-flow: row wrap; -ms-display: flexbox; display: flex; display: -moz-box; display: -ms-flexbox; display: -webkit-flexd; display: flex;}
+	.container .post-list.is-parent-category::-webkit-scrollbar {
+		width: 6px;
+	}
+	.container .post-list.is-parent-category::-webkit-scrollbar-thumb {
+		background-color: #464646;
+		border-radius: 6px;
+	}
+	.container .post-list.is-parent-category::-webkit-scrollbar-track {
+		 background-color: #dcdcdc;
+		border-radius: 6px;
+		box-shadow: inset 0px 0px 5px white;
+	}
+}
+
+
+@media screen and (max-width:1200px){
+.related-posts .container{overflow:hidden;width:100% !important;}
+.arte365-post-single .post-category + div{padding-top:100px;text-align:center;}
+.arte365-post-single .post-header {height:auto; padding: 20px;}
+.arte365-post-single .post-category {width: 80px !important;height: 80px !important; left: 50% !important; transform: translateX(-50%) !important;}
+.arte365-post-single .cap_category {width: 80px !important;height: 80px !important;line-height: 80px !important;}
+
+.click_like .wrap {left: 50px;}
+
+/* 20240717 2024 아르떼 개편 기사 상세 페이지 */
+.arte365-post-single .post-header {padding: 0;}
+.arte365-post-single .cap_category {width: auto !important; height: auto !important; line-height: 32px !important;}
+.arte365-post-single .post-category {width: auto !important; height: auto !important; transform: translateX(0) !important;}
+.arte365-post-single .post-category + div {padding-top: 0; text-align: left;}
+.container .arte365-post-single .post-meta {height: auto;}
+
+}
+
+@media screen and (max-width:1024px){
+.arte365-post-single .post-meta .pull-right span.comment{margin:0 10px;margin-top: 2px;}
+.arte365-post-single .post-meta:before{position:absolute;top:0;left:-100%;width:300%;height:0px;background:none;content:"";visibility:visible;}
+.arte365-post-single .post-meta:after{	position:absolute;	bottom:0;	left:-100%;width:300%;height:0px;	background:none;	content:"";	visibility:visible;}
+.arte365-post-single .post-meta .pull-right span{font-size:14px;}
+
+}
+
+@media screen and (max-width:800px){
+	.post-body .like_wrap .click_like .txt {left: 25%;transform: translateX(-25%);}
+
+	.container.newsletter .page-header {padding: 40px 40px;}
+	.arte365-newsletter.newBg .tit {font-size:40px;}
+	.arte365-newsletter.newBg .sub_tit {font-size: 20px;}
+	div.postall_w.newsletter_submit.newBg .posttext {font-size:16px;}
+	div.postall_w.newsletter_submit.newBg .posttext br {display:none;}
+	div.postall_w.newsletter_submit.newBg .post_box {width:100% !important;}
+	div.postall_w.newsletter_submit.newBg .post_box form input {width:100%;}
+	.unsubscribe {width: 80%;}
+}
+
+
+@media screen and (max-width:720px){
+.post_move.next{display:none;}
+.post_move.prev{display:none;}
+}
+
+
+@media screen and (max-width:640px){
+.arte365-post-single .post-meta {position:relative;margin: 40px auto;height:105px;border-bottom: 0;box-sizing:border-box;color: #6f6f6f;line-height:50px;text-align:center;}
+.arte365-post-single .post-meta .inner .pull-left{float:none !important;}
+.arte365-post-single .post-meta .inner .pull-right{float:none !important;}
+.post-body .like_wrap .click_like .txt {left: 15%;transform: translateX(-15%);}
+
+.arte365-post-single .cap_category {width: 60px !important;height: 60px !important;line-height:60px !important;}
+.arte365-post-single .post-category{width: 60px !important;height: 60px !important;line-height:60px !important;}
+.arte365-post-single .post-category + div{padding-top:70px;}
+
+
+}
+
+
+
+
+
+/* .arte365-post-single .post-small-title br, .post-small-title br{
+	display:none;
+} */

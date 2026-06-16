@@ -1,0 +1,4 @@
+
+@media print {
+	.post_move.prev, .post_move.next, .sns-linker, #progressbar{display:none !important;}
+}
