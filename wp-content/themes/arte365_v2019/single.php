@@ -226,9 +226,9 @@
 					$postsPerPage = 5;
 					$args = array(
 							//'post_type' => 'post',
-							'post_status' => array('post'),
 							'post_status' => array('publish'),
 							'posts_per_page' => $postsPerPage,
+							'order'          => 'DESC',
 							//'nopaging' => true,
 							//'orderby' => 'date',
 							'cat' => array(2815, 6188, 6189, 2808, 2810),
