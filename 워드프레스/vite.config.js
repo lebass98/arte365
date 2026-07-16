@@ -25,11 +25,29 @@ export default defineConfig({
           author: 'Wordncode'
         }
       }
-    })
+    }),
+    {
+      name: 'redirect-to-article',
+      configureServer(server) {
+        server.middlewares.use((req, res, next) => {
+          const pathname = req.url.split('?')[0];
+          if (pathname === '/' || pathname === '/index.html') {
+            res.writeHead(302, { Location: encodeURI('/기사1.html') });
+            res.end();
+            return;
+          }
+          next();
+        });
+      }
+    }
   ],
+  server: {
+    open: encodeURI('/기사1.html')
+  },
   build: {
     rollupOptions: {
       input
     }
   }
 });
+
