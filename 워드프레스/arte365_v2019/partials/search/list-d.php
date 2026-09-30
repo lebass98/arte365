@@ -1,0 +1,364 @@
+<!-- container -->
+<div class="container category-9">
+
+    <div class="archive-header search-header">
+        <h1 class="category-name">검색결과</h1>
+
+
+        <form id="searchForm" name="searchForm" method="get">
+            <div class="row">
+                <div class="search_input_box">
+                    <select name="term_id">
+                        <option value="">전체기사</option>
+                        <option value="2815" <?php echo (isset($_GET['term_id']) && $_GET['term_id'] == 2815) ? 'selected="selected"': '';?>>이슈</option>
+                        <option value="6188" <?php echo (isset($_GET['term_id']) && $_GET['term_id'] == 6188) ? 'selected="selected"': '';?>>인터뷰</option>
+                        <option value="6189" <?php echo (isset($_GET['term_id']) && $_GET['term_id'] == 6189) ? 'selected="selected"': '';?>>리뷰</option>
+                        <option value="2808" <?php echo (isset($_GET['term_id']) && $_GET['term_id'] == 2808) ? 'selected="selected"': '';?>>아이디어</option>
+                        <option value="2810" <?php echo (isset($_GET['term_id']) && $_GET['term_id'] == 2810) ? 'selected="selected"': '';?>>리포트</option>
+                        <!-- <option value="11856" <?php echo (isset($_GET['term_id']) && $_GET['term_id'] == 2810) ? 'selected="selected"': '';?>>영상</option> -->
+                        <option value="2806" <?php echo (isset($_GET['term_id']) && $_GET['term_id'] == 2806) ? 'selected="selected"': '';?>>현장소식</option>
+                    </select>
+                    <input class="" type="text" name="s" placeholder="검색어를 입력하세요" value="<?=$_GET['s']?>">
+                    <button class="" type="button" onclick="_submit('1');">
+                        <image src="/wp-content/themes/arte365_v2019/img/search_con.png"/>
+                    </button>
+                    <label for="innerChecked" style="vertical-align:middle">
+                        <input style="width:25px;height:25px;padding:0;border-radius:1px;vertical-align:middle;" type="checkbox" class="checkbox" name="innerChecked" id="innerChecked" value="1" <?=($_GET['innerChecked']=="1")? "checked":""; ?> onclick="showHidden()">
+                        검색어 내 검색
+                    </label>
+                    <div class="row innerSch">
+						<span style="display: <?=($_GET['innerChecked']=="1")? "block":"none"; ?>;" id="innerSpan" name="innerSpan">
+						<input class="" type="text" name="innerText" id="innerText" placeholder="검색어를 입력하세요" value="<?=$_GET['innerText']?>">
+						<button class="" type="button" onclick="_submit('2');">
+							<image src="/wp-content/themes/arte365_v2019/img/search_con.png"/>
+						</button>
+						</span>
+                    </div>
+                </div>
+            </div>
+
+            <?php
+            $term_id = empty($_GET['term_id']) ? '2815, 6188, 6189, 2808, 2810, 2806' : $_GET['term_id'];
+            $paged = empty($_GET['paged']) ? '1' : $_GET['paged'];
+
+            $keyword = get_search_query();
+            //                $keyword = $_GET['innerChecked'] == "1" ? get_search_query().'+"'.$_GET['innerText'].'"' : get_search_query();
+            $allsearch = new WP_Query( array(
+                    'cat' => $term_id,
+                    's' => get_search_query(),
+                    'st' => true,
+                    'paged' => $paged)
+            );
+            $wp_query =  $allsearch;
+            ?>
+
+
+            <div class="search-swiper-container swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a <?php echo (isset($_GET['term_id']) && $_GET['term_id'] == null) ? 'class="searchClick current"': 'class="searchClick"';?> href="/?s=<?php echo get_search_query(); ?>&term_id=">
+                            전체
+                            <span class="txt-em" id="t_count">
+                                (<?php
+                                $t_count = 0;
+                                $allsearch = new WP_Query( array(
+                                        'cat' => '2815, 6188, 6189, 2808, 2810, 2806',
+                                        's' => $keyword,
+                                        'st' => true)
+                                );
+
+                                $count = $allsearch ->found_posts;
+                                echo $count;
+                                ?>)
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a <?php echo (isset($_GET['term_id']) && $_GET['term_id'] == 2815) ? 'class="searchClick current"': 'class="searchClick"';?> href="/?s=<?php echo get_search_query(); ?>&term_id=2815" >
+                            이슈
+                            <span class="txt-em">
+                                (<?php
+                                $allsearch = new WP_Query( array(
+                                        'cat' => '2815',
+                                        's' => $keyword,
+                                        'st' => true)
+                                );
+                                $count = $allsearch ->found_posts;
+                                echo $count;
+                                $t_count = $t_count+$count;
+                                ?>)
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a <?php echo (isset($_GET['term_id']) && $_GET['term_id'] == 6188) ? 'class="searchClick current"': 'class="searchClick"';?> href="/?s=<?php echo get_search_query(); ?>&term_id=6188">
+                            인터뷰
+                            <span class="txt-em">
+                                (<?php
+                                $allsearch = new WP_Query( array(
+                                        'cat' => '6188',
+                                        's' => $keyword,
+                                        'st' => true)
+                                );
+                                $count = $allsearch ->found_posts;
+                                echo $count;
+                                $t_count = $t_count+$count;
+                                ?>)
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a <?php echo (isset($_GET['term_id']) && $_GET['term_id'] == 6189) ? 'class="searchClick current"': 'class="searchClick"';?> href="/?s=<?php echo get_search_query(); ?>&term_id=6189">
+                            리뷰
+                            <span class="txt-em">
+                                (<?php
+                                $allsearch = new WP_Query( array(
+                                        'cat' => '6189',
+                                        's' => $keyword,
+                                        'st' => true)
+                                );
+                                $count = $allsearch ->found_posts;
+                                echo $count;
+                                $t_count = $t_count+$count;
+                                ?>)
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a <?php echo (isset($_GET['term_id']) && $_GET['term_id'] == 2808) ? 'class="searchClick current"': 'class="searchClick"';?> href="/?s=<?php echo get_search_query(); ?>&term_id=2808">
+                            아이디어
+                            <span class="txt-em">
+                                (<?php
+                                $allsearch = new WP_Query( array(
+                                        'cat' => '2808',
+                                        's' => $keyword,
+                                        'st' => true)
+                                );
+                                $count = $allsearch ->found_posts;
+                                echo $count;
+                                $t_count = $t_count+$count;
+                                ?>)
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a <?php echo (isset($_GET['term_id']) && $_GET['term_id'] == 2810) ? 'class="searchClick current"': 'class="searchClick"';?> href="/?s=<?php echo get_search_query(); ?>&term_id=2810">
+                            리포트
+                            <span class="txt-em">
+                                (<?php
+                                $allsearch = new WP_Query( array(
+                                        'cat' => '2810',
+                                        's' => $keyword,
+                                        'st' => true)
+                                );
+                                $count = $allsearch ->found_posts;
+                                echo $count;
+                                $t_count = $t_count+$count;
+                                ?>)
+                            </span>
+                        </a>
+                    </div>
+                    <!-- <div class="swiper-slide">
+                        <a <?php echo (isset($_GET['term_id']) && $_GET['term_id'] == 11856) ? 'class="searchClick current"': 'class="searchClick"';?> href="/?s=<?php echo get_search_query(); ?>&term_id=11856">
+                            영상
+                            <span class="txt-em">
+                                (<?php
+                    $allsearch = new WP_Query( array(
+                            'cat' => '11856',
+                            's' => $keyword,
+                            'st' => true)
+                    );
+                    $count = $allsearch ->found_posts;
+                    echo $count;
+                    $t_count = $t_count+$count;
+                    ?>)
+                            </span>
+                        </a>
+                    </div>-->
+                    <div class="swiper-slide">
+                        <a <?php echo (isset($_GET['term_id']) && $_GET['term_id'] == 2806) ? 'class="searchClick current"': 'class="searchClick"';?> href="/?s=<?php echo get_search_query(); ?>&term_id=2806">
+                            현장소식
+                            <span class="txt-em">
+                                (<?php
+                                $allsearch = new WP_Query( array(
+                                        'cat' => '2806',
+                                        's' => $keyword,
+                                        'st' => true)
+                                );
+                                $count = $allsearch ->found_posts;
+                                echo $count;
+                                $t_count = $t_count+$count;
+
+                                ?>)
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- <p class="category-description">'<span class="txt-em"><?php echo $_GET['s'];?></span>'(으)로 검색된 결과입니다.</p> -->
+    </div>
+
+    <div class="archive-body clearfix">
+        <div class="left-area">
+            <div class="archive-title clearfix">
+                <h2 class=" pull-left">
+                    <span class="txt-em">[<?php echo $_GET['s'];?>]</span>에 대한 검색 결과입니다.
+                    <!--대해 전체 '<span class="txt-em"><?php echo $wp_query->found_posts;?></span>'건의 기사가 검색되었습니다.-->
+                </h2>
+                <?php
+                $inner_counter = 0;
+                if($_GET['innerChecked'] == "1"){
+
+//                        echo "<pre>";
+                    // echo "post size ====>".count($wp_query->posts);
+//                        $get_search_array = $wp_query->posts;
+//                        echo "</pre>";
+
+                    $innerSearchArr = array();
+                    $innerSearchArr1 = array();
+
+
+                    $innerResult = new WP_Query( array(
+                            'cat'=>$term_id,
+                            's' => get_search_query().'+"'.$_GET['innerText'].'"',
+                            'st' => true)
+                    );
+
+                    $inner_counter = $innerResult->found_posts;
+
+                    /* while($element = each($wp_query->posts)) {
+                       //      ECHO "=====================================================<BR>";
+
+                             $value = $element['value'];
+
+                             if(strpos(urldecode($value->post_content), $_GET['innerText']) === false && strpos(urldecode($value->post_title), $_GET['innerText'])  === false && strpos(urldecode($value->post_excerpt), $_GET['innerText'])  === false) {
+                                     continue;
+                            }else{
+                                     $inner_counter++;
+                                     $innerSearchArr[] = $value->ID;
+                                     $innerSearchArr1[] = $value->post_title;
+                             }
+                           //  ECHO "=====================================================<BR>";
+                             //echo "<br/>";
+                         }*/
+
+                    echo "&nbsp;&nbsp;&nbsp;<h5 class='pull-left'> 검색어 내 키워드<span class='txt-em'>[{$_GET['innerText']}]</span>에 대해 전체 '<span class='txt-em'>{$inner_counter}</span>'건의 기사가 검색되었습니다.</h5>";
+
+                }
+                ?>
+            </div>
+
+            <script>
+                (function($){
+                    $('form#searchForm2 select').on('change', function(e){
+                        $('form#searchForm2').submit();
+                    })
+
+                    $('.searchClick').on('click', function(e){
+                        $('form#searchForm2').submit();
+                    })
+                })(jQuery);
+
+                var search_swiper = new Swiper('.search-swiper-container', {
+                    slidesPerView: 7,
+                    spaceBetween: 0,
+                    //freeMode: true,
+                });
+
+                function _submit(_arg){
+                    if(_arg == 1){
+                        document.getElementById("innerChecked").checked = false;
+                        document.getElementById("innerText").value = "";
+                    }
+                    document.searchForm.submit();
+                }
+                //2021/06/18
+                function showHidden(){
+                    if(document.getElementById("innerChecked").checked == true){
+                        document.getElementById("innerSpan").style.display = "block";
+                    }else{
+                        document.getElementById("innerSpan").style.display = "none";
+                    }
+
+
+                }
+
+                //2021/06/11_전체 갯수 맞추기
+                var t_count = <?php echo $t_count;?>;
+                if(t_count > 0 ){
+                    console.log("t_count ::: "+t_count);
+                    document.getElementById("t_count").innerHTML= "("+t_count+")";
+                }
+
+            </script>
+
+            <?php
+
+            if($_GET['innerChecked'] !="1"){
+
+                ?>
+                <div class="post-list search_result">
+
+                    <?php if (have_posts()) :?>
+
+                        <?php while(have_posts()) : the_post(); ?>
+                            <?php get_template_part('partials/post', 'item');?>
+                        <?php endwhile; ?>
+
+                    <?php endif; ?>
+
+                    <?php if( have_posts() ):?> <!--  페이징 처리.  -->
+                        <?php get_template_part('partials/pagination'); ?>
+
+                    <?php else :?>
+
+                        <div class="no-result">
+                            <p class="text-center">등록된 포스트가 없습니다.</p>
+                        </div>
+                    <?php endif?>
+
+                </div>
+                <?php
+            }else {
+                ?>
+                <div class="post-list">
+
+                    <?php
+                    $inner_posts = new WP_Query(array(
+                        'cat'=>$term_id,
+                        's' => get_search_query().'+"'.$_GET['innerText'].'"',
+                        'st' => true,
+                        'orderby' => 'post__in',
+                        'posts_per_page'=>$inner_counter
+                    ));
+                    /*$posts_count = count($innerSearchArr);
+                    $inner_posts = new WP_Query( array(
+                            'post_type' => 'post',
+                            'post__in' => $innerSearchArr,
+                            'orderby' => 'post__in',
+                            'posts_per_page'=>$posts_count ));*/ //검색어 내 검색
+                    //  print_r($inner_posts);
+
+                    if ( $inner_posts->have_posts() ) :
+                        $post_num=0;
+                        $ul_num=1;
+                        while ( $inner_posts->have_posts() ) :
+                            $inner_posts->the_post();
+                            get_template_part('partials/post', 'item');
+                        endwhile;
+
+                    endif;
+
+                    ?>
+
+                </div>
+                <?php
+            }?>
+        </div>
+        <div class="right-area">
+            <?php get_sidebar();?>
+        </div>
+    </div>
+
+</div><!--// container -->

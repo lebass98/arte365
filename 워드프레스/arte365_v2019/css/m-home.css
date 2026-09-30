@@ -1,0 +1,977 @@
+/* -----------------------------���� �̹���----------------------- */
+/* #main .home-main-banner{height:397px;background: url(/wp-content/uploads/2020/01/bee_200113_main_m.png) no-repeat;background-position: 0 18px;background-size: 100%;} */
+/* #main .home-main-banner{height:590px;background: url(/wp-content/uploads/2021/07/bee_20210705_main_m.jpg) no-repeat;background-position: right 101px;background-size:cover;} */
+
+/* 20231113 */
+/* .post-item:first-child .tb{background:url(/wp-content/uploads/2021/07/um_20210705_main.jpg) no-repeat center center;background-size:contain;background-position:0 0} */
+/* 20231113 */
+
+.post-item:first-child .tb{background:url(/wp-content/uploads/2021/07/um_20210705_main.jpg) no-repeat center center;background-size:contain;background-position:0 0}
+/* .post-item:nth-child(2) .tb{background:url(/wp-content/uploads/2020/09/um_list.jpg) no-repeat 0 0;background-size:cover;background-position:center center} */
+/* 	.post-item:nth-child(2) .authur, .post-item:nth-child(3) .authur{display:none} */
+.post-item:last-child .tb{background:url(/wp-content/uploads/2021/07/ssak_20210705_main.jpg) no-repeat 0 0;background-size:50% 100%;background-position:0 0}
+/* -----------------------------���� �̹���----------------------- */
+.featured-posts .post-item:first-child .tb:before{background-size:100% 90%;opacity:1;}
+.featured-posts .post-item:last-child .tb:before{background-size:100% 77%;}
+/* #main	.home-main-banner .banner-desc .post-meta{top:5%;bottom:auto; left: 23%; width: auto;text-shadow: 0px 0px 2px #000000;} */
+#main	.home-main-banner .banner-desc .post-meta{top: auto; bottom: 50px; left: 30px;width: 76%; /* text-shadow: 0px 0px 2px #000000; */ text-align:left}
+.cover-bg:before{display:block;width:100%;height:100%;content:""} 
+a[href="http://arte365.kr/?p=78449"] .post-excerpt{display:none}
+a[href="http://arte365.kr/?p=78449"] .authur{color:#000;}
+a[href="http://arte365.kr/?p=78449"] .tb:before{display:none}
+a[href="http://arte365.kr/?p=74753"] .post-meta{display:none}
+
+.skip_nav, .hidden{display:block;position:absolute;top:-9999px;left:-9999px;text-indent:-9999px;}
+input, textarea, button {-webkit-appearance:none; -moz-appearance:none; appearance:none;}
+.search.mobile #main.response {padding-top: 0;}
+
+.home-main-banner {
+    display: block;
+	overflow:hidden;
+    height: 460px;
+    position: relative;
+    background: 50% 50% no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.home-main-banner img {
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+	/* margin-left:-350px; */
+	max-width:none;
+}
+
+.home.page #main .home-main-banner{
+	position:relative;
+	margin-top:65px;
+	transition:all .5s ease;
+} 
+/* .home.page #main .home-main-banner:before{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0, 0, 0, 0.13);
+	content:"";
+	z-index:10;
+} */
+
+.home-main-banner .banner-desc {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    bottom: auto;
+	width:100%;
+	/* margin:0 auto; */
+    z-index: 2;
+}
+
+.home-main-banner .banner-desc .category {
+    display: inline-block;
+	vertical-align:top;
+	width:70px;
+	height:70px;
+	margin-right:20px;
+	font-size:17px;
+	background:#ff7667;
+	color:#fff;
+	text-align:center;
+	line-height:70px;
+} 
+
+.home-main-banner .banner-desc .post-meta {
+	display: inline-block;
+    text-align: center;
+    line-height: 1.4;
+	/* text-shadow:3px 7px 10px #000; */
+	vertical-align:top;
+	position:absolute;
+	left:30%;
+	bottom:0;
+}
+
+
+
+.home-main-banner .banner-desc .post-meta .post-title span {color: #000; font-weight:300; /* text-shadow: 1px 1px 5px rgb(0 0 0 / 55%); */ /* text-shadow: 2px 3px 5px #000; */}
+
+.featured-posts {
+    overflow: hidden;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.featured-posts *{transition:all .2s ease-in-out}
+
+.featured-posts .post-list {
+	display:flex;
+	flex-flow:column;
+    width: auto;
+    white-space: nowrap;
+}
+
+.featured-posts .post-list .post-item {
+    padding: 0;
+    border-bottom: 0;
+    display: block;
+    width: 100%;
+    white-space: normal;
+    vertical-align: top;
+}
+
+.featured-posts .post-item {
+    display: block;
+}
+
+.featured-posts .post-item:last-child {
+	/* margin-right: 20px; */
+}
+
+.featured-posts .post-item .inner {
+    width: 100%;
+    position: relative;
+	box-sizing:border-box;
+}
+
+
+.featured-posts .post-item .tb {
+	position:relative;
+    width: 100%;
+    height: 325px;
+    /* -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; */
+}
+
+.featured-posts .post-item .tb:before{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	/* background:url(/wp-content/uploads/2019/08/main_shadow.png) no-repeat 100% 100%;
+	background-size:100% 77%; */
+	box-shadow:inset 0px -2px 4px rgb(130 130 130 / 13%);
+	z-index:1;
+	content:"";
+}
+
+
+/* .featured-posts .post-item:nth-of-type(1) .tb:before{ 
+	background:none;
+	
+} */
+
+.featured-posts .post-item .post-category {
+	position:absolute;
+	top:0;
+	left:0;
+	width:70px;
+	height:70px;
+	font-size:17px;
+	background:#ff7667;
+	color:#fff;
+	line-height:70px;
+	text-align:center;
+}
+.featured-posts .post-item .meta-box{
+	position:absolute;
+	bottom:30px;
+	right:0;
+}
+
+.featured-posts .post-item .post-category span {
+    line-height: 1;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.featured-posts .post-item .post-title,
+.featured-posts .post-item .post-excerpt,
+.featured-posts .post-item .post-meta .authur{
+	color:#000;
+	border:none;
+	line-height: 0.3rem;
+}
+.home-featured-posts .featured-post:last-child .author{display:block;height:0;opacity:0;}
+.featured-posts .post-item .post-title {
+	color:#000;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.featured-posts .post-item .post-title{
+	font-size:29px;
+	font-weight:500;
+}
+
+.featured-posts .post-item .post-excerpt {
+	color:#893000;
+    font-size: 14px;
+	font-weight:500;
+    line-height: 1.25;
+    margin-bottom: 80px;
+}
+
+.featured-posts .post-item:last-child .post-excerpt {
+	color:#538300;
+}
+
+/* .post-item:nth-of-type(1) .post-title {
+    color: #fff;
+    text-shadow: none;
+}
+.post-item:nth-of-type(1) .post-meta .authur{
+    color: #fff;
+    text-shadow: none;
+}
+.post-item:nth-of-type(1) .post-excerpt {
+    color: #fff;
+    text-shadow: none;
+} */
+.featured-posts .post-item .post-excerpt{
+	font-size:18px;
+}
+
+.featured-posts .post-item .post-meta {
+    font-size: 14px;
+	font-weight:500;
+    color: #000;
+	line-height:1.5em;
+}
+
+.featured-posts .post-item:last-child .post-meta {display:block;height:0;opacity:1;}
+
+
+.featured-posts .post-item .meta-box{
+	/* max-width:200px; */
+	height:auto;
+	padding:5px 10px 20px 5px;
+	background:#222;
+}
+
+.featured-posts .post-item .meta-box{
+	padding:0;
+	background:none;
+	top:0;
+	width:55%;
+	height:100%;
+	padding-top:40px;
+	padding-right:5%;
+}
+
+/* .featured-posts .post-item .post-meta .authur{
+	color:#000;
+} */
+
+.home-full-banner {
+    margin-bottom: 20px;
+	padding:0 13%;
+}
+
+.home-full-banner img {
+    display: block;
+    width: 100%;
+}
+
+.home-video {
+    background: #555555;
+    padding: 40px 20px;
+}
+
+.home-video .video-area {
+    position: relative;
+}
+
+.home-video .video-area img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.home-video .video-area iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.widget {
+    position: relative;
+    padding: 30px 20px;
+}
+
+.widget .widget-title {
+    font-size: 24px;
+    padding-bottom: 14px;
+    border-bottom: 3px solid #000;
+}
+
+.recent-posts .post-list {
+    position: relative;
+}
+
+.recent-posts .post-list .post-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.recent-posts .post-list .post-item:last-child {
+    border-bottom: 0;
+}
+
+.recent-posts .post-list .post-item .post-category {
+    font-size: 14px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.recent-posts .post-list .post-item .post-title {
+    font-size: 18px;
+    line-height: 1.25;
+}
+.home-main-banner .banner-desc .post-meta .post-excerpt {
+    width: 100% !important;
+}
+
+
+.su-posts-default-loop .su-post-excerpt{display:none}
+
+.main_sort{width:100%;margin:20px auto;}
+.main_sort p:first-child{display:none}
+.main_sort select{float:right;width:143px;height:50px;background:#fff;font-size:15px;}
+
+.main_sort .sort_tit{  float:left;  padding:10px 0;box-sizing:border-box;font-size: 28px;    font-weight: 500;    text-align: center;}
+
+/* #recentPosts .post-item + .post-item{margin-top:23px} */
+#recentPosts{position:relative;}
+/* #recentPosts  button#main_post_add, .subject_list button{width:100%;padding:13px 0;background:#f8f8f8;border:1px solid #ddd;font-size:18px} */
+#recentPosts  button#main_post_remove{display:none;width:100%;padding:13px 0;background:#f8f8f8;border:1px solid #ddd;font-size:18px}
+
+/* 지원사업/뉴스레터/독자게시판 220530 */
+.newsList .tit{margin-bottom:24px;font-size:36px;font-weight:500;text-align:center;font-weight: 600;letter-spacing: -2px;}
+.newsList .post-item{text-align:left}
+.newsList .post-list .post-item {padding-bottom:0;}
+.newsList .post-list .post-item:nth-child(1) .post .post-meta {border-top:1px solid #000;}
+.newsList .post-list .post-item .post {margin-bottom:0;}
+.newsList .post-list .post-item .post .post-meta{display:flex;padding:20px 0;margin-bottom:0;align-items:center;border-bottom:1px solid #d4d8db;}
+.newsList .post-list .post-item .post .post-meta p span{display:flex;justify-content:center;align-items:center;width:60px;height:60px;margin-bottom:3px;border:1px solid #f8513e;color:#f8513e;text-align:center;font-weight:500;}
+.newsList .post-list .post-item .post .post-meta .text {width: calc(100% - 35px);padding-left: 20px;}
+.newsList .post-list .post-item .post .post-meta .publisher span.r{border:1px solid #f84935;color:#fff;background-color:#ff7667;}
+.newsList .post-list .post-item .post .post-meta .publisher span.b{border:1px solid #1d64c5;color:#1d64c5;}
+.newsList .post-list .post-item .post .post-title{overflow: visible;word-break: break-word;margin-bottom:7px;padding-right:5px;font-size:17px;color:#000;letter-spacing: -0.08em;margin-top: -2px;width: 100%;}
+
+.submit_news .arte365-newsletter{padding:40px 0 0;}
+.submit_news .arte365-newsletter  h3{text-align:left;font-weight: 600;letter-spacing: -1px;}
+.submit_news .arte365-newsletter  h3 + p{text-align:left;}
+.submit_news .ban_link li{padding:60px 5%;background:#fff;text-align:center;background-color:#fef0e9;}
+.submit_news .ban_link li + li{position:relative;display:inline-block;margin-left:-2px;padding: 30px 5%;width:49.93%;height:33vh;background-color:#f4f5f7;vertical-align:top;box-sizing: border-box;}
+.submit_news .ban_link li + li::after {position: absolute; bottom: 10px; right: 10px; width: 30px; height: 30px; background: url(http://arte365.kr/wp-content/uploads/2022/circleRight.png) no-repeat; background-size: cover;content: '';}
+.submit_news .arte365-newsletter p.con{font-size:12px;margin-bottom:0}
+
+.subject_wrap{width:100%;margin:0 auto;padding:50px 10px;border-bottom:2px solid #ccc;box-sizing:border-box;}
+.subject_wrap .subject_tit{float:left;padding:10px 0;font-size:28px;font-weight:500;text-align:center;}
+.subject_wrap  .subject_list > div{margin-bottom:20px}
+.subject_list li{padding:0;margin:0 5px;text-align:center;background:#fff;box-sizing:border-box}
+.subject_list li:first-child{width:320px !important;}
+.subject_list li a{display:inline-block;width:300px;padding:10px 0;box-sizing:border-box;font-size:27px;font-weight:500;color:#000}
+.subject_list li:first-child a{width:320px; font-size:23px;}
+.subject_list li a:before, .subject_list li a:after{top:0;font-size: 60px; color: #ef0a25; }
+.subject_list li a:before{margin-right:10px;content: "[";vertical-align:sub;}
+.subject_list li a:after{margin-left:10px;content: "]";vertical-align:sub;}
+#arte365SubscribeForm {width:100%;}
+/* .subject_list button{float:right;width:140px;} */
+.main-slide{margin-top:30px;}
+.tab-content > div:last-child{padding:0 3%}
+.note_more {margin:0 auto;padding:0 5px 0 5px;position: absolute;top:6px;right: 3%;width:40px;height:40px;color: #000;border: 1px solid #c8c8c8;background: #f8f8f8;line-height: 10px;font-size:20px;text-align:center;cursor: pointer;z-index:1000;}
+.note_more img{display:block;width:16px;height:16px;}
+
+.event_close{position:absolute;top:0;right:0;width:50px;height:50px;background:#fff;opacity:0;z-index:100}
+/* .featured-posts .post-item:last-child .post-title, .featured-posts .post-item:last-child .post-excerpt, .featured-posts .post-item:last-child .authur{color:#003365;} */
+.featured-posts .post-item:last-child .meta-box{bottom:10%}
+.subject_all{position: absolute;    top: 220px;    right: 3%;    width: 105px;    padding: 10px 0;    box-sizing: border-box;    border: 1px solid #e0e0e0;    box-shadow: 1px 1px 5px #eee;    background: #fff;    letter-spacing: -0.1em;    cursor: pointer;}}
+
+/* swiper */
+.swiper-container{position:relative;overflow:hidden;margin:0 auto;padding:0;list-style:none;z-index:1;}
+.swiper-wrapper{display:flex;position:relative;width:100%;height:100%;z-index:1;  -webkit-transition-property: -webkit-transform;transition-property: -webkit-transform; -o-transition-property: transform;    transition-property: transform; transition-property: transform, -webkit-transform; -webkit-box-sizing: content-box; box-sizing: content-box;}
+.swiper-slide{-webkit-flex-shrink: 0;    -ms-flex-negative: 0;  flex-shrink: 0;  width: 100%;    height: 100%; position: relative;-webkit-transition-property: -webkit-transform;    transition-property: -webkit-transform;    -o-transition-property: transform;    transition-property: transform;    transition-property: transform, -webkit-transform;}
+.main-slide{display:none}
+.main-slide .swiper-wrapper{box-sizing:border-box;}
+.main-slide .swiper-slide{position:relative;padding:15px;border:1px solid #ddd;box-sizing:border-box;border-radius:4px;background:#fff;}
+.main-slide .swiper-slide p{line-height:1.3em;letter-spacing:-0.05em;color:#000;}
+.main-slide .swiper-slide .category{margin-bottom:15px;font-size:16px;font-weight:500;text-align:left;}
+.main-slide .swiper-slide .slide_tit{margin-bottom: 15px; font-size: 25px; text-align: left; font-weight: 300;}
+.main-slide .swiper-slide .slide_subtit{margin-bottom: 25px; font-size: 18px; text-align: left;}
+.main-slide .swiper-slide .date{font-size: 15px; color: #888888; text-align: left;}
+.search-swiper-container .swiper-slide:last-child{border-right:1px solid #ddd;}
+
+
+/* ������� */
+.award_list{overflow:hidden;position:absolute;top:50%;right:5%;transform:translateY(-50%)}
+.award_list .item{float:left;width:50px;}
+
+
+.home-main-banner .banner-desc .post-meta .post-title span.font_thin{
+	display:inline-block;
+	color:#fff;
+	font-weight:normal
+}
+
+
+/*72 ����1 ������ */
+.home-main-banner .banner-desc .post-meta .post-title {
+    font-size: 30px;/*���� ũ�� 33px 2020.05.18�� ����*/
+    color: #000;
+    margin-bottom: 25px;
+    font-weight: 400;
+    line-height: 1.2;
+	text-align:left;
+	/* text-shadow: 1px 1px 10px rgb(0 0 0 / 30%); */
+	/* text-shadow: 1px 1px 5px rgb(0 0 0 / 30%); */
+	/* text-shadow: 1px 1px 10px #000; */
+	/* -webkit-text-stroke: 1px rgba(255,255,255,1.2); */
+
+}
+
+/* ����1 ������ */
+.home-main-banner .banner-desc .post-meta .post-excerpt {
+	margin-bottom:25px;
+	font-size: 18px;
+	color:#c23724;
+	text-align:left;
+	font-weight: 600;
+	 /* text-shadow: 2px 3px 13px #e0d9cd; */
+	/* text-shadow:1px 1px 10px rgb(0 0 0 / 30%); */
+	/* text-shadow: 0px 0px 2px #000; */
+
+/* 
+	margin-bottom: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: left;
+    text-shadow: 0px 0px 9px #000000; */
+}
+
+/* 102 ����1 ������ */
+.home-main-banner .banner-desc .post-meta .publisher , .home-main-banner .banner-desc .post-meta .authur {
+    font-size: 14px;
+    color: #000;
+	text-align:left;
+	/* text-shadow: 1px 1px 5px rgb(0 0 0 / 30%); */
+	/* text-shadow: 1px 1px 5px rgb(0 0 0 / 65%); */
+		
+    /* text-shadow: 2px 2px 5px #000000; */
+}
+
+/* .featured-posts .post-item:last-child .post-title, .featured-posts .post-item:last-child .post-excerpt{display:none} */
+.featured-posts .post-item:last-child a[href="http://arte365.kr/?p=76577"] .meta-box{height:0}
+
+.postboimg .ul_floatkyh6.box_line {display: block;}
+.postboimg .ul_floatkyh6 li.box_img:first-child {width: 100%;}
+
+/* 200612 h 추가 */
+div.postall_w div.posttit.mt_50{margin-top:50px !important;}
+.multiple-swiper-wrapper .swiper-slide{margin-bottom:15px !important;}
+
+/* 200720 */
+.sch-select{position:relative;width:90%;margin:0 auto;background-color: #333333;}
+.sch-select p{padding:20px 0;box-sizing:border-box;font-size:15px;color: #fff;}
+.search-swiper-container{display:none;position:absolute;left:0;width:100%;height:350px !important;border:none;border-right:none !important;}
+.search-swiper-container .swiper-slide:last-child{border-right:none !important;}
+.search-swiper-container .swiper-wrapper{flex-direction:column}
+.search-swiper-container .swiper-wrapper .swiper-slide{height:14%;background-color:#fff;border-bottom:1px solid #333;}
+.search-swiper-container .searchClick{height:100%;padding:0;border:none;line-height:46px;}
+
+/* header 해쉬태그 */
+.hash-tag{padding: 16px 26px 0;}
+.hash-tag p{margin-bottom:10px;color:#fff;}
+.hash-tag  span{color:#f11134}
+.hash-tag ul{font-size:0;}
+.hash-tag ul li{display:inline-block;height:30px;margin-bottom:5px;margin-right:5px;vertical-align:top;background-color:#fff;line-height:30px;}
+.hash-tag ul li a{display:block;width:100%;height:100%;padding:0 15px;font-size:14px;color:#000;box-sizing:border-box;}
+
+/* 이벤트배너 위치조정 */
+  .event_banner{display:block;/*height:100px;*/}
+ .event_banner img{width:100%;height:100px;} 
+/*  #header{top:0 !important; */}
+  #header.solid{top:0px !important;}
+ .single #header.solid, .category #header.solid, .page-id-51291 #header.solid, .page-id-20286 #header.solid, .page-id-436 #header.solid, .post-type-archive-sublist #header.solid,.post-type-archive-subject #header.solid, .page-id-74904 #header.solid, .page-template-default #header.solid{
+ 	background:rgba(56, 56, 56, 0.88);
+ 	top:0 ;
+	height:65px;
+ }
+
+ .page-template-default #header.solid{background:#333;}
+ 
+ .event_banner{display:block} 
+
+/* 20200612 추가 */
+#menu-arte365-v-2019-prim5ary-menu li a span span{display:none}
+.swiper-slide.on a {color:#f10e31;text-decoration:none;}
+
+area{display:block !important;}
+
+/* 20210511 */
+.sort_reply{-ms-display: flexbox;display: -moz-box;display: -ms-flexbox;display:-webkit-flex;display:flex;float:left;font-size:25px;font-weight:600;}
+.sort_reply input{display:none}
+.sort_reply label{width:325px;padding:25px 0;font-size:18px;text-align:center;}
+.sort_reply span{display:block}
+.apply_relate{background-color:#2e3136;color:#fff;}
+.article_view{border:1px solid #eee;}
+
+/* 20210602 */
+.post-content .newsletter_wrap table{margin:0 auto; border:none;}
+.post-content .newsletter_wrap table p{color:#000;}
+.post-content .newsletter_wrap table b{font-weight:bold}
+.post-content .newsletter_wrap table th, .post-content .newsletter_wrap table td { padding: 0px; border: none;}
+.post-content .newsletter_wrap table td p a br{display:none;}
+/* .post-content .newsletter_wrap table.newsletter_tit p br{display:none} */
+.post-content .newsletter_wrap table tr.sns a>p, .post-content .newsletter_wrap table tr.sns a+p{display:none}
+.post-content .newsletter_wrap table.footer a br{display:none}
+.post-content .newsletter_wrap table.footer td{text-align:left;}
+
+/* 금주의 주제 */
+.month-box{
+position:absolute;top:0;left:0;width:100%;height:150px;padding:30px;box-sizing:border-box;
+background:#1e9ae0;
+/* background:linear-gradient(135deg, #750f00, #360300); *//* background:url('../img/bg_month_subject.jpg') no-repeat 0 0; */
+background-size:cover;
+}
+.month-box > span{display:block;margin-bottom:15px;font-size:14px;color:#fff;}
+.month-box .month-cont{font-size:28px;font-weight:500;color:#ffde00;}
+.month-box .month-cont p{margin-top:15px;font-size:14px;font-weight:400;color:#fff;}
+
+/* 20220519 메인 최신 & 영상 */
+.sort_reply span .commentNew {display: inline-block;font-weight: bold;color: #e50000;font-size: 16px;vertical-align: top;margin-left: 2px;margin-top: -5px;}
+.tab-contents .post-list .post-item h3 .post-new{display:inline-block; margin-top: 6px;vertical-align: top;font-size:16px;font-weight:bold;color:#e40000;margin-left:6px;line-height:100%}
+/* .tab-contents .post-list .post-item:nth-child(-n+3) h3 .post-new{display:inline-block; margin-top: 6px;vertical-align: top;font-size:16px;font-weight:bold;color:#e40000;margin-left:6px;line-height:100%}  */
+/* .tab-contents .post-list .post-item:nth-child(n+4) h3 .post-new{display:none} */ /* 221109 주석 처리 */
+.tab-contents .post-list .post-item h3 .commentCount {display: inline-block;margin-top: 8px;vertical-align: top;font-size: 16px;font-weight: bold;color: #e40000;margin-left: 6px;line-height: 100%;}
+.publisherContets {overflow: hidden; margin-bottom: 30px;height: 70px; font-size: 16px;font-weight: 300; color: #747478;line-height: 1.4rem;text-overflow: ellipsis; display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
+.movie_title.text-center {padding:60px 0 40px;background-color:#f4f5f7;}
+.left-area.mVideo  {position:relative;}
+.mainVideo .post-item .post.videoBig .post-tb {position:relative;}
+.mainVideo .post-item .post.videoBig .post-tb::before{position:absolute;top: 50%; left: 50%;transform:translate(-50%, -50%);width:25%;height:70px;background: url(https://arte365.kr/wp-content/uploads/2022/icon-mainVideo.png) no-repeat center center;background-size: contain;z-index:3;content:'';}
+
+.post-list.vScroll .post-item article.post .post-tb {position:relative;margin-bottom:10px !important;}
+.post-list.vScroll .post-item article.post .post-tb::before {position: absolute;top: 5px;left: 7px;width: 30px;height: 30px; background: url(https://arte365.kr/wp-content/uploads/2022/icon-mainVideo_w.png); z-index: 3; content: '';}
+
+.left-area.mVideo::before {position:absolute;width:100%;height:90vh;background-color: #f4f5f7;z-index:-1;content:'';}
+.videoBig .post-excerpt {color:#494a4c;font-size: 18px;line-height:1.25;}
+.videoBig .post-tb img {width:100% !important;}
+.videoBig .movie_info {padding: 40px 3% 8%;}
+.videoBig .post-title {margin-top:20px;font-size: 22px;font-weight:500;line-height: 1.2;}
+.videoBig .post-meta {margin-top:30px;}
+.videoBig .post-date {color:#4a4a4a;font-size:14px;}
+.post-list .post-item .post .post-small-title {font-size: 18px !important;}
+.mobile .post-list .post-item .post .post-tb img {width:100%;}
+
+/* .vScroll {overflow-y: scroll;overflow-y: hidden;display:flex;flex-flow:row wrap;justify-content: space-between;padding-bottom:50px !important;flex-direction: column;} */
+.vScroll {padding: 0 !important; width:100%;box-sizing: border-box;} 
+.vScroll .swiper {overflow: hidden;margin: 0 3% 0 1.6%; box-shadow: 9px 16px 28px 0px rgb(0 0 0 / 8%);}
+.vScroll::-webkit-scrollbar {padding: 0 !important; margin: 0 3%;100%; overflow: hidden;}
+.vScroll::-webkit-scrollbar-thumb {background-color: #464646;border-radius: 6px;}
+.vScroll::-webkit-scrollbar-track {background-color: #dcdcdc;border-radius: 6px;box-shadow: inset 0px 0px 5px white;}
+.vScroll .post-item {overflow: visible;display:flex;padding: 0;padding-bottom:10px;flex-flow:row wrap; box-sizing: border-box;}
+.mVideo .vScroll .post-item .post {width:48%; margin-bottom: 0.4rem !important;background-color:#fff;border-radius: 5px;padding: 7px;box-sizing: border-box;box-shadow: 9px 16px 28px 0px rgb(0 0 0 / 8%);}
+.vScroll .post-item .post .post-title {height:37px;font-size:15px !important;text-overflow: ellipsis;display: -webkit-box !important;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.vScroll .post-item + .post-item + .post-item {margin-top:10px;}
+.vScroll .post-item article{margin-left:0.4rem}
+.vScroll .post-tb img {border-radius: 5px;}
+.vScroll .scrollbarWrap {position:relative;overflow:hidden;height:6px;border:1px solid yellow;background-color:#dcdcdc;border-radius:10px;}
+.vScroll .scrollbarWrap .swiper-scrollbar {position: absolute; z-index: 3;}
+.vScroll .swiper-container-horizontal>.swiper-scrollbar {position: relative;height: 6px;bottom: 0;background-color: #dcdcdc;}
+/* .vScroll .swiper-wrapper {flex-flow:row wrap;} */
+
+
+
+/* 20220628 주제별 큐레이션 */
+.main_subject_slider .swiper-slide.swiper-slide-active .slide_txt::before {display:none;}
+.main_subject_slider .swiper-slide.swiper-slide-active .slide_txt::after {display:none;}
+
+/* 20220628 주제별 큐레이션 */
+.curation .main_tab_box {width: 95%;height:100%;}
+.curation .main_subject_slider {position:relative;background-color:#fcf8f7;}
+.curation .main_subject_list {padding:0;}
+.curation .main-tab-content {margin:0;}
+.curation .main-tab-content .tab_box {padding:30px 0;}
+.curation .multiple-swiper-wrapper .swiper-slide {height: 255px;}
+.curation .multiple-swiper-wrapper .swiper-slide + .swiper-slide {margin:0;}
+.curation .main_tab_box .slide_subtit {line-height: 20px;height: 42px;display: -webkit-box; -webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden; text-overflow: ellipsis;}
+.curation .main_tab_box .authur {line-height: 1rem;}
+.curation .main_subject_slider .swiper-slide {margin-top:10px;height:100px;line-height:1.8rem;}
+.curation .swiper-pagination-fraction {position: absolute;top: 53%;width: 100%;height: 16px;bottom: 216px;}
+.box {position:absolute;margin: 0 auto;width: 90%;height: 50px;background-color:#fff;border:1px solid #efeaec;bottom: 30px;left: 50%;transform: translateX(-50%);}
+.curation .box .menuBtn {position:absolute; width: 19px;height: 16px; top: 50%; left: 50%; transform: translate(-50%, -50%);background: url('http://arte365.kr/wp-content/uploads/2022/menu.png') center center no-repeat;cursor:pointer;}
+.curation .box .swiper-button-prev {position:absolute;background: #fff url('http://arte365.kr/wp-content/uploads/2019/06/arrow_left.png') center center no-repeat;}
+.curation .box .swiper-button-prev::before {position:relative;width:70px;top: 15px; left: 30px;font-size:14px;font-weight:500;content:'이전 \ 주제';white-space:pre;}
+.curation .box .swiper-button-next {position:absolute;background: #fff url('http://arte365.kr/wp-content/uploads/2022/arrow_right_red.png') center center no-repeat;}
+.curation .box .swiper-button-next::after {position:relative;width:70px;top: 15px; right: 60px;font-size:14px;font-weight:500;content:'다음 \ 주제';white-space:pre;}
+
+.popCuration {position:absolute;padding: 20px;margin-top:100px;width: 95%;height:490px;top:100%;background-color:#fff;z-index:101;display:none;left: 50%; transform: translateX(-50%);}
+.popCuration .topWrap {position: relative;height:48px;top: 0;}
+.popCuration h2 {position:absolute;top:0;display:inline-block;padding-bottom:27px;font-size:22px;font-weight:600;letter-spacing:-1px;}
+.popCuration .btn_close{position:absolute;display:inline-block;top:-12px;right:0;width:40px;height:40px;cursor:pointer}
+.popCuration .btn_close:before{position:absolute;top:25px;left:0;width:35px;height:1px;background-color:#000;transform:rotate(45deg);content:""}
+.popCuration .btn_close:after{position:absolute;top:25px;left:0;width:35px;height:1px;background-color:#000;transform:rotate(135deg);content:""}
+.popCuration ul {display:flex;flex-flow:row wrap;height:390px;overflow:auto;}
+.popCuration ul li {padding:10px;width:100%;height:40px;line-height:18px;border:1px solid #dbdbdb;border-radius:5px;box-sizing:border-box;cursor:pointer;}
+.popCuration ul li + li {margin-top:10px;}
+.popCuration ul li a {font-size:15px;letter-spacing:-1.4px;}
+.popCuration ul li a br {display:none;}
+.popCuration ul li:hover {border:1px solid #cf0021;line-height:18px;}
+.popCuration ul li:hover a {display: block;font-size:15px;color:#cf0021;letter-spacing:-1.4px;text-decoration:none;font-weight:500;}
+.cu-bg {display:block;}
+.cu-bg.on {display:block;position:fixed;top:0;left:0;width:100%;height:100vh;background-color:rgba(0, 0, 0, 0.6);z-index:100;}
+.popCuration.on {display:block;}
+
+/* 20230607 메인 뉴스레터 신청 추가 */
+.newsletter_popup {position: relative; display: none;}
+.newsletter_popup.on {display: block; z-index: 101;}
+.newsletter_popup__inner {position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); box-sizing: border-box; text-align: center; background: #fff;}
+.newsletter_popup__tit {display: inline-block; font-weight: bold;}
+.newsletter_popup__inner [type=button] {background: #ff7666; border: none; color: #fff;}
+.news-bg {display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: rgba(0, 0, 0, 0.6); z-index: 100;}
+.news-bg.on {display: block;}
+
+/* 20230608 메인 뉴스레터 신청 추가 */
+.newsletter_popup__inner {width: 80%; height: auto; padding: 30px 0;}
+.newsletter_popup__tit {margin-bottom: 15px; font-size: 18px;}
+.newsletter_popup__txt {margin-bottom: 20px; font-size: 14px;}
+.newsletter_popup__inner [type=button] {width: 101px; padding: 10px 0; font-size: 15px;}
+
+/* 20230619 메인 이달의 주제 추가 */
+.month-box {height: 190px; padding: 25px 30px; background: #0071d1;}
+.month-box .month-cont {font-size: 30px; color: #f6ff00;}
+.month-box .month-cont p {font-size: 15px; line-height: 20px; font-weight: 300;}
+
+/* 20230706 메인 카테고리 아이디어 추가 */
+.featured-posts .post-item .post-category {display: flex; justify-content: center; align-items: center;}
+
+/* 20231106 필자 삭제 수정 */
+/* .featured-posts .post-item .post-meta, .featured-posts .post-item:last-child .post-meta {display: none;} */
+
+/* 20231106 이달의 주제 가운데 정렬 수정 */
+.month-box.mobile {display: flex; align-items: center;}
+
+/* 240415 메인 3번째 기사 여백 수정 */
+/* .featured-posts .post-item:last-child .meta-box {padding-top: 0;} */
+
+/* 20240513 메인 2번째 기사 부제 삭제 */
+/* .featured-posts .post-item:first-child .post-excerpt {display: none;} */
+
+#menu-item-94074, #menu-item-99887{display:none;}
+
+
+
+@media screen and (min-width:900px){
+	/* .featured-posts .post-item .meta-box{max-width:100%;} */
+}
+
+@media screen and (min-width:720px){
+
+}
+@media screen and (max-width: 1400px){
+	.month-box .month-cont br {display:none;}
+
+	.home.page #main .home-main-banner{background-position: 54% -380px;}
+}
+
+@media screen and (max-width: 1200px){
+	.home.page #main .home-main-banner{background-position: 54% 70%;}
+}
+
+@media screen and (max-width: 1024px){
+	.home-main-banner .banner-desc .post-meta .post-excerpt{width:85%;color:#004593;font-weight:500; /* text-shadow: 1px 1px 5px rgb(0 0 0 / 30%); */ /* text-shadow: 1px 1px 5px rgb(0 0 0 / 55%); */ /* letter-spacing:-2px */}
+	.main_subject_wrap .main_subject_slider .swiper-slide.swiper-slide-active .slide_txt{font-size:30px;padding:0;}
+	.main_subject_wrap .main_subject_slider .swiper-slide-next .slide_txt, .main_subject_wrap  .main_subject_slider .swiper-slide-prev .slide_txt{font-size:23px}
+	/* .main_subject_wrap .main_subject_slider .swiper-slide.swiper-slide-active .slide_txt::before{margin-left:-30px;} */
+	.main_subject_wrap .main_subject_slider .swiper-slide.swiper-slide-active .slide_txt::after{margin-left:10px}
+	.main_subject_wrap .main_subject_slider .swiper-slide.swiper-slide-active .slide_txt::before, .main_subject_wrap .main_subject_slider .swiper-slide.swiper-slide-active .slide_txt::after{top:-10px;font-size:60px;}
+	/*.main_subject_wrap  .multiple-swiper-wrapper .swiper-slide{width: 300px !important;margin-right: 10px;margin-left: 10px;margin-bottom:5px !important}*/
+	div.postall_w div.posttext.mt_25{margin-top:15px !important;}
+	div.postall_w .postphotoin .posttext{padding-left:0 !important}
+	.ul_floatkyh6 li.box4 {width:24.2% !important}
+	.ul_floatkyh6 li.box4:nth-child(2n+1) {margin:0 0.5px;}
+	.ul_floatkyh6.modi{width:100%;}
+
+	.ul_floatkyh6 
+	.ul_floatkyh6.interview li.box4 {width:49.5% !important;}
+	.ul_floatkyh6.interview li a br{display:none;}
+	.ul_floatkyh6.interview li:nth-child(n+3){margin-top:3px}
+	.featured-posts .post-item .meta-box{width:50%}
+	.post-content .tabLink.fixed{top:113px; width:100%;}
+
+
+	.main_sort .sort_tit{font-size: 24px;font-weight:600;}
+	.home.page #main .home-main-banner{/* margin-top:-20px; */ margin-top: -5px; height:454px;background-position:84% 101px;transition:all .2s ease;}
+	.month-box .month-cont{font-size:24px;}
+	.month-box .month-cont br {display:none;}
+	.month-box > span{margin-bottom:10px;}
+	.month-box .month-cont p{margin-top:15px;}
+	.home-main-banner .banner-desc{top:0;}
+	.home-main-banner .banner-desc .category{width:60px;height:60px;font-size:15px;line-height:60px;}
+	.home-main-banner .banner-desc .post-meta .post-title{font-size:25px;}
+	.home-main-banner .banner-desc .post-meta .post-excerpt{font-size:16px;}
+	.featured-posts .post-item .post-title{font-size:28px;margin-bottom:10px;}
+	.featured-posts .post-item .post-excerpt{margin-bottom:8vw;font-size:18px;}
+	.featured-posts .post-item .post-category{width:60px;height:60px;font-size:15px;line-height:60px;}
+	.post-content .tabLink.fixed{top:95px;}
+	.ul_floatkyh6 li.box4 {width:49.4% !important}
+	.ul_floatkyh6 li.box4:nth-child(2n+1) {margin-top:5px;}
+	.ul_floatkyh6.modi{width:100%;}
+	#main .featured-posts .post-item .tb{height:300px;background-position:0px 0;}
+	.featured-posts .post-item .meta-box{padding-right:12px;}
+	
+	.home.page #main .home-main-banner{    background-position: 54% 90%;}
+
+    /* 20230619 메인 이달의 주제 추가 */
+    .home-main-banner .banner-desc {top: 190px;}
+    .month-box .month-cont {font-size: 30px;}
+    .month-box > span {margin-bottom: 15px;}
+	.home.page #main .home-main-banner {height: 624px;}
+}
+
+@media screen and (max-width: 900px){
+	.featured-posts .post-item .meta-box{max-width:100%;width:100%;padding-left:55vw;}
+	#main .featured-posts .post-item .tb{height:250px;background-position:0px 0;}
+	.featured-posts .post-item .meta-box{	padding-top:20px;}
+	/* .home.page #main .home-main-banner{background-position: 0;} */
+
+}
+
+@media screen and (max-width: 320px){
+	
+}
+
+@media screen and (max-width: 700px){
+	.featured-posts .post-item .post-title{font-size:24px;}
+	.featured-posts .post-item .post-excerpt{margin-bottom:11vw;font-size:17px;}
+	.featured-posts .post-item .meta-box{padding-left:400px;padding-left:62vw;padding-top:20px;}
+	.featured-posts .post-item .post-meta{font-size:12px;}
+	.sort_reply{width:100%;}
+	.sort_reply label{width:50%;}
+	.post-content div.postall_w div.posttextinin.box {width: 100% !important;}
+	/* .home.page #main .home-main-banner{height:364px;} */
+}
+
+
+
+@media screen and (max-width:600px){
+	.main_sort .sort_tit{font-size: 24px;font-weight:600;}
+	.home.page #main .home-main-banner{/* margin-top:-30px; */ height:350px;transition:all .2s ease;}
+	/* .home.page #main .home-main-banner{background-position:0 0; background-size:100%} */
+	.month-box .month-cont{font-size:24px;}
+	.month-box .month-cont br {display:none;}
+	.month-box > span{margin-bottom:10px;}
+	.month-box .month-cont p{margin-top:15px;}
+	.home-main-banner .banner-desc{top:0;}
+	.home-main-banner .banner-desc .category{width:60px;height:60px;font-size:15px;line-height:60px;}
+	.home-main-banner .banner-desc .post-meta .post-title{font-size:25px;}
+	.home-main-banner .banner-desc .post-meta .post-excerpt{font-size:16px;}
+	.featured-posts .post-item .post-title{font-size:20px;margin-bottom:10px;}
+	.featured-posts .post-item .post-excerpt{margin-bottom:9vw;font-size:15px;}
+	.featured-posts .post-item .post-category{width:60px;height:60px;font-size:15px;line-height:60px;}
+	.post-content .tabLink.fixed{top:65px;}
+	.ul_floatkyh6 li.box4 {width:49.4% !important}
+	.ul_floatkyh6 li.box4:nth-child(2n+1) {margin-top:5px;}
+	.ul_floatkyh6.modi{width:100%;}
+	#main .featured-posts .post-item .tb{height:210px;background-position:0px 0;}
+	.featured-posts .post-item .meta-box{padding-right:12px;padding-left: 53vw;}
+	.post-content table.table_210913 {table-layout:fixed;margin-top:5px;width: 100% !important;}
+
+	.post-content table colgroup col {display: none;}
+	.post-content table.table_210913 thead th:nth-child(1) {display:none}
+	.post-content table.table_210913 thead th:nth-child(2) {display:none}
+	.post-content table.table_210913 tr {table-layout:fixed;display:block;width:100%;}
+	.post-content table.table_210913 tr th {display:block;width:100%;}
+	.post-content table.table_210913 tr td {display:block;width:100%;}
+	
+	/* 20220105 좌담 스크롤 추가 
+	.tabLink {width: 100%;-webkit-overflow-scrolling: auto;-webkit-overflow-scrolling: touch;}
+	.tabLink::-webkit-scrollbar {width: 100%;height:1px;}
+	.tabLink::-webkit-scrollbar-thumb {background: #a9a9a9;} 
+	.tabLink .swiper-scrollbar {background: rgba(0,0,0,.05);}*/
+
+    /* 20230619 메인 이달의 주제 추가 */
+    .home-main-banner .banner-desc {top: 190px;}
+    .home.page #main .home-main-banner {height: 520px; /* margin-top: -20px; */ margin-top:-5px;}
+
+}
+
+@media screen and (max-width:560px){
+	#main .featured-posts .post-item .tb{
+	/* height:180px; */
+	height:166px;
+	background-position:0px 0;}
+	.featured-posts .post-item .post-excerpt{margin-bottom:3vw;font-size:15px;}
+
+    /* 20230619 메인 이달의 주제 추가 */
+    .month-box {height: 180px; padding: 20px;}
+    .month-box .month-cont {font-size: 20px;}
+    .month-box .month-cont p {font-size: 14px;}
+    .home-main-banner .banner-desc {top: 180px;}
+}
+
+@media screen and (max-width: 475px){
+	#header .container{height:65px;}
+	#header .logo{width:120px;height:24px;left:25px !important;}
+	#header .btn-toggle{width:30px;height:22px;background-size:30px auto;}
+	.home.page #main .home-main-banner{height:330px; /* margin-top:-20px; */ margin-top:-5px; background-position: 20% 38px; /* background-position: 30% bottom; background-size:150%; */}
+	.home.page #main .home-main-banner{background-position:right bottom; background-size:100% }/* 211008 현주 추가 */
+	/* .home-main-banner .banner-desc{top:120px;} */
+	.home-main-banner .banner-desc{top:0;}
+	.month-box{height:120px;padding:25px 10px;}
+	.month-box > span{font-size:12px;}
+	.month-box .month-cont{font-size:18px;}
+	.month-box .month-cont p{margin-top:10px;font-size:11px;line-height:1.5em;}
+	#main .home-main-banner .banner-desc .post-meta{bottom:15px;left:15px;}
+	.home-main-banner .banner-desc .post-meta .post-title{font-size:24px;}
+	.home-main-banner .banner-desc .post-meta .post-excerpt{font-size:16px;}
+	.home-main-banner .banner-desc .post-meta .publisher, .home-main-banner .banner-desc .post-meta .authur{font-size:12px;}
+/* 	.featured-posts .post-item .meta-box{padding-top:10px;} */
+	.featured-posts .post-item .meta-box{padding-top:20px;}
+	.featured-posts .post-item .post-category{width:44px;height:44px;font-size:14px;line-height:42px;}
+	.featured-posts .post-item .post-title{font-size:17px;}
+	.featured-posts .post-item .post-excerpt{margin-bottom:4vw;font-size:13px;}
+	.featured-posts .post-item .post-meta{font-size:10px;}
+	.featured-posts .post-item .meta-box{padding-left: 58vw;}
+	.featured-posts .post-item .meta-box{padding-right:12px;}
+	.main_subject_wrap .main_subject_slider .swiper-slide.swiper-slide-active .slide_txt{font-size:25px;}
+	.main_subject_wrap .main_subject_slider .swiper-slide-next .slide_txt, .main_subject_wrap .main_subject_slider .swiper-slide-prev .slide_txt{font-size:20px;}
+	.main_subject_slider .swiper-slide .slide_txt{font-size:13px;}
+	/* .post-content .tabLink.fixed{top:65px;} */
+	/* #main .featured-posts .post-item .tb{height:165px;background-position:-10px 0;} */
+	#main .featured-posts .post-item .tb{height:165px;background-position:0 0;}
+	.left-area.mVideo::before {height: 80vh;}
+	/* 20221212 모바일에서 중제 2줄로 보이기 위해 쓰임 원래 width:100%; 필요없을 시 삭제 가능 */
+	.home-main-banner .banner-desc .post-meta .post-excerpt {
+		width: 83% !important;
+		word-break:keep-all;
+	}
+
+	/* 20230626 큐레이션 여백 추가 */
+    .curation .main_subject_slider .swiper-slide {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    /* 20230619 메인 이달의주제 추가 */
+    .month-box {height: 150px; padding: 15px; box-sizing: border-box;}
+    .home-main-banner .banner-desc {top: 150px;}
+    .month-box .month-cont {line-height: 0.9rem;}
+    .month-box .month-cont p {font-size: 12px;}
+    #main .home-main-banner .banner-desc .post-meta {top: 30%;}
+	.home.page #main .home-main-banner {height: 520px;}
+
+/* 20240401 4월 이달의 주제 추가 */
+.month-box {height:196px}
+.home-main-banner .banner-desc {top: 196px;}
+
+/* 20240814 2024 아르떼 개편 header 추가 */
+#header .logo {width: 93px; height: 18px;}
+}
+
+@media screen and (max-width: 425px){
+	.home-full-banner{padding:0 17%;}
+/* 	#main .featured-posts .post-item .tb{height:160px;background-position:-18px 0;} */
+	#main .featured-posts .post-item .tb{height:170px;background-position: 0 0;}
+	.home.page #main .home-main-banner{background-position:right 10% bottom 30%; background-size:110% }/* 211025 현주 추가 */
+/* 	.featured-posts .post-item .post-title{font-size:17px;} */
+	.featured-posts .post-item .post-title{font-size:16px;}
+	.featured-posts .post-item .post-excerpt{margin-bottom:4vw;font-size:13px;}
+	.featured-posts .post-item .post-meta{font-size:11px;}
+	.featured-posts .post-item .meta-box{padding-left: 54vw;}
+	/* .featured-posts .post-item .meta-box{padding-left: 63vw;} */
+	.featured-posts .post-item .meta-box{padding-right:12px;}
+	.curation .box .swiper-button-prev::before {top: 11px;}
+	.curation .box .swiper-button-next::after {top: 11px;}
+
+	/* 230706 메인 이미지 추가 */
+	.home.page #main .home-main-banner {background-size: cover;}
+}
+
+@media screen and (max-width: 390px){
+/* 	.featured-posts .post-item .meta-box{padding-left: 56vw;} */
+	/* .featured-posts .post-item .meta-box{padding-left: 65vw;} */
+	.featured-posts .post-item .meta-box{padding-left: 54vw;}
+	
+	.home.page #main .home-main-banner{ background-position:right bottom; background-size:115% }/* 220411 현주 추가 iphone12 */
+    /* 240829 2024 개편 메인 슬라이드 추가 */
+    .home.page #main .home-main-banner{background-size: cover;}
+}
+
+
+@media screen and (max-width: 375px){
+	.home-full-banner{padding:0 13%;}
+/* 	#main .featured-posts .post-item .tb{height:160px;background-position:-18px 0;} */
+	/* #main .featured-posts .post-item .tb{height:160px;background-position: 0 0;} */
+	#main .featured-posts .post-item .tb{height:170px;background-position: -18px 0; background-size: contain;}
+	.featured-posts .post-item .post-title{font-size:16px;}
+	.featured-posts .post-item .post-excerpt{margin-bottom:1.2vw;font-size:12px;/* margin-bottom:4vw; */}
+	.featured-posts .post-item .post-meta{font-size:10px;}
+	/* .featured-posts .post-item .meta-box{padding-left: 58vw;} */
+	.featured-posts .post-item .meta-box{padding-left: 63vw;}
+	.featured-posts .post-item .meta-box{padding-right:12px;}
+
+}
+
+@media screen and (max-width: 360px){
+/* #main .featured-posts .post-item .tb{height:160px;background-position:-18px 0;} */
+	/* #main .featured-posts .post-item .tb{height:160px;background-position: 0 0;} */
+	#main .featured-posts .post-item .tb{height:160px;background-position: -18px 0; background-size: contain;}
+	/* .featured-posts .post-item .meta-box{padding-left:64vw;} */
+	/* .featured-posts .post-item .meta-box{padding-left:68vw;} */
+	.featured-posts .post-item .meta-box{padding-left:64vw;}
+	.featured-posts .post-item .meta-box{padding-right:10px;}
+	/*.home.page #main .home-main-banner{background-position:-0px 115px; background-size:100% }211025 현주 추가 */
+	.home.page #main .home-main-banner{background-size:cover }/* 220405 red */
+
+    /* 20230620 메인 이달의 주제 추가 */
+    .month-box {padding: 10px 15px;}
+	/* .home.page #main .home-main-banner {height: 380px;} */
+
+	/* 20231120 메인 기사 추가 */
+	#main .featured-posts .post-item .tb:before {height:160px;}
+}
+
+@media screen and (max-width: 320px){
+	.home-full-banner{padding:0 7%;}
+	.home-full-banner{padding:0 13%;}
+	#main .featured-posts .post-item .tb{height:150px;background-position:-18px 0;}
+	.featured-posts .post-item .post-title{font-size:15px;}
+	.featured-posts .post-item .post-excerpt{margin-bottom:4vw;font-size:11px;}
+	.featured-posts .post-item .post-meta{font-size:10px;}
+	.featured-posts .post-item .meta-box{padding-left: 60vw;}
+	.featured-posts .post-item .meta-box{padding-right:10px;}
+	/*.home.page #main .home-main-banner{background-size: auto 72%;} 211008 현주 추가 */
+	.home.page #main .home-main-banner{background-size:cover }/* 220405 red */
+}
+
+
+/* ===================   레이아웃 3개   =======================  */
+ /* .featured-posts .post-item:nth-child(2) .post-excerpt {
+ 	color:#009133;
+ }
+ @media screen and (max-width: 475px){
+ 	.featured-posts .post-item .meta-box {padding-top:20px;}
+ }
+ @media screen and (max-width: 425px){
+ 	.featured-posts .post-item:nth-child(2) .post-title{width: 90%;}
+ 	#main .featured-posts .post-item .tb:before {height: 170px;}
+ 	.featured-posts .post-item .meta-box {padding-left: 54vw;}
+ }
+ @media screen and (max-width: 375px){
+ 	.featured-posts .post-item:nth-child(2) .post-title{    width: 90%;}
+ 	#main .featured-posts .post-item .tb:before {    height: 160px;}
+ } */
+
+/* ===================   // 레이아웃 3개   =======================  */

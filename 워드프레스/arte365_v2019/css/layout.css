@@ -1,0 +1,230 @@
+.wrapper {
+	width: auto;
+
+}
+
+.container {
+	width: 1120px;
+	margin: 0 auto;
+	padding: 0 20px;
+	position: relative;
+}
+
+#header {
+	margin-bottom: 30px;
+	position: relative;
+	z-index: 99;
+}
+
+#header .top-area {
+	height: 85px;
+	position: relative;
+	border-bottom: 1px solid #cbcbcb;
+}
+#header .logo {
+	background: url(../img/logo.png) 50% 50% no-repeat;
+	width: 145px;
+	height: 28px;
+	-moz-background-size: 145px 28px;
+	  -o-background-size: 145px 28px;
+	     background-size: 145px 28px;
+	position: absolute;
+	left: 28px;
+	top: 40px;
+}
+
+#header .logo a {
+	display: block;
+	text-indent: -999em;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+#header .bottom-area {
+	position: relative;
+	border-bottom: 3px solid #202020;
+}
+
+#header #nav {
+	padding: 0 8px;
+	float: left;
+}
+
+
+#header .gnb > ul > li {
+	float: left;
+	position: relative;
+}
+
+#header .gnb > ul > li > a {
+	display: block;
+	line-height: 44px;
+	padding: 0 20px;
+	white-space: nowrap;
+	color: #0e152b;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+#header .gnb > ul > li:hover > a,
+#header .gnb > ul > li.current-menu-item > a {
+	color: #f5003c;
+}
+
+#header .gnb > ul > li > .sub-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #000;
+	background: rgba(0,0,0,.85);
+	padding: 15px 0;
+	opacity: 0;
+	visibility: hidden;
+	/* transition: all 300ms ease-out; */
+}
+
+#header .gnb > ul > li > .sub-menu > li > a {
+	display: block;
+	white-space: nowrap;
+	color: #fff;
+	font-size: 18px;
+	padding: 10px 40px 10px 30px;
+}
+
+#header .gnb > ul > li:hover > .sub-menu {
+	opacity: 1;
+	visibility: visible;
+}
+
+#header .search-form {
+	float: right;
+	border-left: 1px solid #000;
+	height: 24px;
+	margin: 10px 0;
+}
+
+#header .search-form input {
+	height: 24px;
+	border: 0;
+	font-size: 14px;
+	color: #6f6f6f;
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	        border-radius: 0;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+	padding: 0 10px;
+	width: 150px;
+	vertical-align: top;
+}
+
+#header .search-form button[type="submit"] {
+	border: 0;
+	margin: 0;
+	padding: 0 20px 0 25px;
+	background: url(../img/icon-search.svg) 0 50% no-repeat;
+	-moz-background-size: auto 22px;
+	  -o-background-size: auto 22px;
+	     background-size: auto 22px;
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	        border-radius: 0;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+	cursor: pointer;
+	font-size: 18px;
+	color: #0e152b;
+	line-height: 24px;
+	vertical-align: top;
+}
+
+#main {
+	min-height: 200px;
+}
+
+#footer {
+	background: #393939;
+	color: #fff;
+	font-weight: 300;
+}
+
+#footer .inner {
+	padding: 40px 35px;
+}
+#footer .company-info {
+	margin-bottom: 30px;
+	position: relative;
+}
+
+#footer .company-info .logo {
+	background: url(../img/logo-company.png) 50% 50% no-repeat;
+	width: 244px;
+	height: 33px;
+	-moz-background-size: 244px 33px;
+	  -o-background-size: 244px 33px;
+	     background-size: 244px 33px;
+	float: left;
+	margin-right: 32px;
+	text-indent: -999em;
+	overflow: hidden;
+}
+
+#footer .company-info p {
+	margin-bottom: 6px;
+}
+
+#footer .footer-menu {
+	margin-bottom: 30px;
+}
+
+#footer .footer-menu a {
+	color: #fff;
+	white-space: nowrap;
+}
+
+#footer .footer-menu li {
+	display: inline-block;
+}
+
+#footer .footer-menu li:after {
+	content: '|';
+	margin: 0 8px; 
+	color: #6f6f6f;
+}
+#footer .footer-menu li:last-child:after {
+	content: none;
+}
+
+#footer .split {
+	margin: 0 8px; 
+	color: #6f6f6f;
+
+}
+
+#footer .copy {
+	font-size: 12px; 
+	letter-spacing: 0;
+}
+
+#footer .btn-top {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 44px;
+	height: 44px;
+	background: #494949;
+	background: rgba(77,77,77,.8);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-image: url(../img/icon-up.svg);
+	-moz-background-size: 20px auto;
+	  -o-background-size: 20px auto;
+	     background-size: 20px auto;
+	cursor: pointer;
+	text-indent: -999em;
+	overflow: hidden;
+	display: block;
+}

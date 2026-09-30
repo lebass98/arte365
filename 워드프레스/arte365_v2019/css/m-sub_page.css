@@ -1,0 +1,204 @@
+/* 2024 아르떼 개편 */
+/* 공통 헤더 */
+.single #header.solid, .category #header.solid, .page-id-51291 #header.solid, .page-id-20286 #header.solid, .page-id-436 #header.solid, .post-type-archive-sublist #header.solid, .post-type-archive-subject #header.solid, .page-id-74904 #header.solid, .page-template-default #header.solid {height: 60px;}
+/* 서브 헤더 */
+#progressbar {/* top: 60px; */ top: unset;} /* 20250804 red position top 값 제거
+게이지 시작점이 이미 약 5% 정도 차지하고 있어서 페이지 초기 진입 시 이벤트 배너와 프로그래스바가 겹치는 현상이 발생함.
+└ 그래서 프로그래스바를 기존 post-body가 아닌 header에 그려지도록 js 수정함(arte365@121.78.124.237:22:/home/arte365/www/wp-content/themes/arte365_v2019/js/common.js || 542 line).
+이벤트 배너 유무에 따라 헤더 높이를 수정할 때 프로그래스바도 자동으로 위치 조정되는 원리. */
+
+/* 20250701 이재광 - 상단 고정 배너 있을때 프로그레스바 위치 조정 */
+/*
+.event_show.solid2 #progressbar {
+	top: 90px;
+}
+.event_show #progressbar {
+	top: 160px;
+}
+*/
+
+/* 20240712 모바일 기사 상세페이지 */
+/* 기사 좌담 바로가기 탭 */
+.post-content .tabLink.fixed {top: 90px;}
+/* 기사 상세 썸네일 */
+.m_thumb {display: none !important;}
+/* 기사 제목 */
+.arte365-post-single {padding-top: 0;}
+.arte365-post-single .post-header {height: auto; /* padding: 60px 0 0; */ padding: 30px 0 0;}
+.arte365-post-single .post-top {position: relative; margin-bottom: 0; padding: 20px 16px; box-sizing: border-box; border-bottom: 1px solid #000;}
+/* .arte365-post-single .post-top::before {position: absolute; bottom: -1px; left: -100%; width: 100%; height: 1px; content: ''; border-bottom: 1px solid #000;}
+.arte365-post-single .post-top::after {position: absolute; bottom: -1px; right: -100%; width: 100%; height: 1px; content: ''; border-bottom: 1px solid #000;} */
+.arte365-post-single .post-category {width: auto; height: auto; margin-bottom: 10px; background: transparent;}
+.arte365-post-single .post-category .cap_category {justify-content: left; width: auto; height: auto; color: #ED1A3C; font-size: 14px; line-height: 24px; font-weight: bold;}
+.arte365-post-single .post-title {padding: 0; margin-top: 0; margin-bottom: 10px; text-align: left; font-size: 26px; line-height: 34px; font-weight: bold; color: #111;}
+.arte365-post-single .post-small-title {margin-bottom: 0; text-align: left; font-size: 16px; line-height: 26px; font-weight: 500; color: #111;}
+.arte365-post-single .post-meta {position: relative; margin-top: 0; padding: 8px 16px; border-top: none; border-bottom: 1px solid #999999;}
+/* .arte365-post-single .post-meta::before {content: ''; position: absolute; bottom: 0; left: -100%; border-bottom: 1px solid #999999;}
+.arte365-post-single .post-meta::after {content: ''; position: absolute; bottom: 0; right: -100%; border-bottom: 1px solid #999999;} */
+.arte365-post-single .post-meta .inner {margin-top: 0;}
+.arte365-post-single .post-meta span.publisher {margin-top: 0; font-size: 14px; color: #111; line-height: 24px;}
+.arte365-post-single .post-meta span {color: #111; line-height: 18px; font-size: 12px;}
+.arte365-post-single .post-meta .pull-left {float: none;}
+.post-meta .pull-right {top: 0; float: none;}
+.arte365-post-single .post-meta .pull-right span {vertical-align: middle; margin-top: 0; margin-right: 5px; font-size: 12px; line-height: 18px; color: #111;}
+.arte365-post-single .post-meta span.post-date {margin-top: 0;}
+.arte365-post-single .post-meta .pull-right span.comment {margin-left: 0; margin-right: 5px; margin-top: 0;}
+.arte365-post-single .post-meta .pull-right span.comment strong {font-weight: 400;}
+.arte365-post-single .post-meta .pull-right span.hit strong {font-weight: 400;}
+/* .msize {top: 57%; bottom: auto; right: 96px;}
+.mfont {top: 57%; bottom: auto; right: 56px; left: auto;}
+.share_wrap {float: none; top: 57%; bottom: auto; right: 16px;} */
+.link_box {display: flex; flex-direction: row; padding: 8px 16px; box-sizing: border-box;}
+.msize {position: static; margin-right: 5px;}
+.mfont {position: static; margin-right: 5px;}
+.share_wrap {position: relative; float: none;margin-left:auto;bottom:auto;top:auto;left:auto;right:auto;}
+
+/* 기사레이아웃 */
+div.postall_w div.posttit {text-align: center; font-size: 24px; line-height: 32px; font-weight: bold; color: #111;}
+div.postall_w div.posttext {text-align: justify; word-break: break-all; font-size: 17px !important; line-height: 32px;}
+
+/* 기사 따옴표 회색 박스 */
+.posttext.mt_25.f_bold__box {padding: 20px 31px; box-sizing: border-box; line-height: 24px;}
+.posttext.mt_25.f_bold__box .posttext.ta_r {font-size: 14px; line-height: 24px; color: #111;}
+
+/* 큐앤에이 */
+.posttext.mt_25.qna_q .qna_q__box {margin-right: 9px;}
+.posttext.mt_25.qna_q .qna_q__box .qna_tit {font-size: 14px; line-height: 24px; font-weight: bold;}
+.posttext.mt_10.qna_a .qna_a__box {margin-right: 8px;}
+.posttext.mt_10.qna_a .qna_tit {font-size: 14px; line-height: 24px; font-weight: bold;}
+
+/* 이미지 캡션 */
+div.postall_w div.postboimg div.txts.ta_r {font-size: 12px; line-height: 20px;}
+
+/* 회색 필자 프로필 */
+.postprofilein {flex-direction: column; align-items: center; padding: 20px 16px 22px; box-sizing: border-box;}
+.mobile div.postall_w div.postprofilein div.profile {flex: none;}
+div.postall_w div.postprofilein div.profile {float: none; width: 68px !important; height: 68px !important; margin-top: 0; border-radius: 999px; overflow: hidden;}
+div.postall_w div.postprofilein div.profile img {width: 100% !important; height: 100% !important;}
+.mobile div.postall_w div.postprofilein div.txts.v3 {padding: 0;}
+div.postall_w div.postprofilein div.txts.v3 em {margin-bottom: 0; text-align: center; font-size: 16px; line-height: 20px; color: #111; font-weight: bold;}
+div.postall_w div.postprofilein div.txts div {margin-bottom: 0;}
+div.postall_w div.postprofilein div.profile + .txts div {text-align: justify; word-break: break-all; font-size: 14px; line-height: 24px; color: #333; font-weight: 400;}
+
+/* 메인 필자 프로필 */
+div.postall_w div.postphotoin {align-items: baseline;}
+.arte365-post-single div.postall_w div.postphotoin {position: relative; padding: 0 3% 16px; border-bottom: 1px solid #999;}
+.arte365-post-single div.postall_w div.postphotoin dl dt {font-size: 14px; line-height: 20px; font-weight: bold;}
+div.postall_w div.postphotoin dl dt {color: #111;}
+div.postall_w div.postphotoin dl dd {color: #333;}
+div.postall_w div.postphotoin .le {width: 68px; height: 77px; margin: 20px auto 10px; border-radius: 22px;}
+.mobile div.postall_w div.postphotoin dl {padding: 0; margin-top: 0; text-align: justify; word-break: break-all;}
+.arte365-post-single div.postall_w div.postphotoin dl dd {text-align: justify; word-break: break-all; font-size: 14px; line-height: 24px; font-weight: 400;}
+div.postall_w div.postphotoin dl dd a {padding-top: 0; font-size: 14px !important; line-height: 24px; color: #333;}
+div.postall_w .postphotoin div.posttext {padding: 0;}
+div.postall_w div.postphotoin div.posttext {text-align: left; color: #333; font-size: 12px !important; line-height: 22px;}
+div.postall_w div.postphotoin div.posttext a {color: #333; font-size: 12px !important; line-height: 22px;}
+
+/* 기사 상세 키워드 */
+.arte365-post-single .post-tags {padding: 16px 16px 30px; box-sizing: border-box; background: transparent;}
+.arte365-post-single .post-tags .tags-title {display: none;}
+.arte365-post-single .post-tags .tag-links {text-align: center;}
+.arte365-post-single .post-tags .tag-links a {padding: 6px 12px; box-sizing: border-box; border: 1px solid #F9C9C9; border-radius: 999px; font-size: 14px; line-height: 20px; color: #111;}
+
+/* 댓글남기기 */
+/* .post-comment {display: none;} */
+
+/* 기사 상세 코너별 기사보기 */
+/* .subject-posts .posts-box.posts-box_pc {display: none;} */
+.subject-posts_inner {margin-top: 40px; padding: 0 16px; box-sizing: border-box;}
+.subject-posts_tit__box {display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 15px;}
+.subject-posts_tit__box h3 {font-size: 18px; font-weight: bold; line-height: 22px; color: #111;}
+.subject-posts_tit__box button {width: 123px; padding: 7px 0 7px 10px; box-sizing: border-box; font-size: 12px; font-weight: 500; line-height: 18px; text-align: left; color: #E61E15; background: #fff url(https://arte365.kr/wp-content/uploads/2024/08/icon-crossover.png) no-repeat center right 10px; border: 1px solid #E61E15; background-size: 7px 7px; border-radius: 999px;}
+.subject-posts .posts-cont:first-child {border-top: 1px solid #111;}
+.subject-posts .posts-cont {border-bottom: 1px solid #ddd;}
+.subject-posts .posts-cont:last-child {border-bottom: none;}
+.subject-posts .posts-cont > a {display: flex; align-items: center; padding: 10px 10px 10px 0; box-sizing: border-box;}
+.subject-posts .posts-cont > a .posts-right {width: 100%; overflow: hidden;}
+.subject-posts .posts-cont > a .posts-r {flex: none; width: 70px; text-align: center; font-size: 14px; line-height: 24px; color: #ED1A3C; font-weight: bold;}
+.subject-posts .posts-cont > a .posts-tit {margin-bottom: 4px; font-size: 14px; line-height: 24px; font-weight: 500; color: #111; white-space: nowrap; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;}
+.subject-posts .posts-cont > a .posts-s_tit {margin-bottom: 4px; font-size: 12px; line-height: 20px; font-weight: 500; color: #111; white-space: nowrap; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;}
+.subject-posts .posts-cont > a span {font-size: 12px; line-height: 20px; font-weight: 400; color: #747478;}
+.subject-posts .posts-cont > a span.posts-comment {margin-left: 4px; font-size: 13px; line-height: 24px; color: #ED1A3C; font-weight: 500;}
+
+/* 기사 상세 최신기사 */
+.related-posts .posts-box.posts-box_pc {display: none;}
+.related-posts {padding: 40px 16px; box-sizing: border-box;}
+.related-posts_tit__box {display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 15px;}
+.related-posts_tit__box h3 {margin-bottom: 0; font-size: 18px; line-height: 22px; font-weight: bold; color: #111;}
+.related-posts_tit__box button {width: 123px; padding: 7px 0 7px 10px; box-sizing: border-box; font-size: 12px; font-weight: 500; line-height: 18px; text-align: left; color: #E61E15; background: #fff url(https://arte365.kr/wp-content/uploads/2024/08/icon-crossover.png) no-repeat center right 10px; border: 1px solid #E61E15; background-size: 7px 7px; border-radius: 999px;}
+.related-posts .posts-cont:first-child {border-top: 1px solid #111;}
+.related-posts .posts-cont {border-bottom: 1px solid #ddd;}
+.related-posts .posts-cont:last-child {border-bottom: none;}
+.related-posts .posts-cont > a {display: flex; align-items: center; padding: 10px 10px 10px 0; box-sizing: border-box;}
+.related-posts .posts-cont > a .posts-r {flex: none; width: 70px; text-align: center; font-size: 14px; line-height: 24px; color: #ED1A3C; font-weight: bold;}
+.related-posts .posts-cont > a .posts-right {width: 100%; overflow: hidden;}
+.related-posts .posts-cont > a .posts-tit {margin-bottom: 4px; font-size: 14px; line-height: 24px; font-weight: 500; color: #111; white-space: nowrap; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;}
+.related-posts .posts-cont > a .posts-s_tit {margin-bottom: 4px; font-size: 12px; line-height: 20px; font-weight: 500; color: #111; white-space: nowrap; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;}
+.related-posts .posts-cont > a span {font-size: 12px; line-height: 20px; font-weight: 400; color: #747478;}
+.related-posts .posts-cont > a span.posts-comment {margin-left: 4px; font-size: 13px; line-height: 24px; color: #ED1A3C; font-weight: 500;}
+
+/* 20240822 2024 개편 기사 하단 키워드 추가 */
+.arte365-post-single .post-tags .tag-links a {color: #ff9a9a; border: 1px solid #ff9a9a;}
+.arte365-post-single .post-tags .tag-links a:hover {color: #ff9a9a;}
+
+/* 20240902 2024 개편 기사 레이아웃 수정 */
+div.postall_w div.posttit {border-bottom: none; text-decoration: underline;}
+
+/* 20240904 2024 개편 기사 프로필 수정 */
+.arte365-post-single div.postall_w div.postphotoin dl dd {text-align: center;}
+/* 20240909 2024 개편 기사 레이아웃 수정 */
+.posttext.mt_25.f_bold__box {line-height: 32px;}
+/* 20240909 2024 개편 코너별 기사보기 수정 */
+.subject-posts .posts-cont:first-child {border-top: none;}
+.subject-posts .posts-cont {border-bottom: none;}
+
+.subject-posts.subject-posts__corner .posts-cont {margin-bottom: 25px;}
+.subject-posts.subject-posts__corner .posts-cont + .posts-cont {margin-top: 0; margin-bottom: 25px;}
+
+.posts-box_pc .other_post .posts-bottom,
+.posts-box_pc .other_post .posts-top { padding:0 3%;}
+
+/* 20241203 기사 중제 추가 */
+div.postall_w div.posttit {display: block;}
+
+/* 20241203 기사 회색박스 추가 */
+div.postall_w div.posttext.posttext-color--box {padding: 20px 31px; box-sizing: border-box;}
+
+@media (max-width:1024px) {
+    .post-content .tabLink.fixed {top: 60px;}
+	.subject-posts.subject-posts__corner .posts-cont > a{display:block;padding:0;}
+	.subject-posts.subject-posts__corner .posts-cont > a .post-tb{    margin-bottom: 10px;    border-radius: 8px 8px 0 0;    overflow: hidden;}
+	.subject-posts.subject-posts__corner .posts-cont > a .posts-r{ display: inline-block; position: static; justify-content: left; width: auto; height: auto; margin-bottom: 12px; background: transparent; color: #ED1A3C; font-size: 12px; line-height: 18px;    font-weight: bold;}
+	.subject-posts.subject-posts__corner .posts-cont > a .posts-r br{ display: none;}
+	/* .subject-posts.subject-posts__corner .posts-cont > a .post-title{    margin-top: 0px !important;    margin-bottom: 0px !important;    font-size: 22px;font-weight:500;    line-height: 1.2em;} */
+	.subject-posts.subject-posts__corner .posts-cont > a .post-title{ margin-bottom: 12px; font-size: 16px; line-height: 19px; font-weight: 500; color: #111;}
+	/* .subject-posts.subject-posts__corner .posts-cont > a .post-small-title{margin-top: 8px;margin-bottom: 10px;    font-size: 12px !important;    line-height: 18px;    font-weight: 500;color: #828282;} */
+	.subject-posts.subject-posts__corner .posts-cont > a .post-small-title{ margin-top: 0; margin-bottom: 12px; font-size: 14px 	!important; line-height: 22px; font-weight: 500; color: #333;}
+	/* .subject-posts.subject-posts__corner .posts-cont > a .publisher{font-size: 10px;    line-height: 16px;    font-weight: 400;    color: #333;letter-spacing: -0.05em;} */
+	.subject-posts.subject-posts__corner .posts-cont > a .publisher{margin-bottom: 12px; font-size: 14px; line-height: 22px; font-weight: 400;    color: #333;letter-spacing: -0.05em;}
+	    
+	.subject-posts.subject-posts__corner .posts-cont > a .post-date{color: #6f6f6f;    font-size: 14px; line-height: 22px;text-align: left;}
+}
+
+@media (max-width:640px) {
+    /* 20241203 기사 회색박스 추가 */
+    div.postall_w div.posttext.posttext-color--box {padding: 20px 31px; box-sizing: border-box;}
+}
+
+@media (max-width:475px) {
+    /* 공통 헤더 */
+    #header .container {height: 60px;}
+    #header .btn-toggle {width: 24px; height: 24px; background-size: 100% 100%;}
+    #header .logo {left: 16px !important;}
+}
+
+@media (max-width:360px) {
+    /* 기사 상세 공유하기 */
+    /* .msize {top: 60%;}
+    .mfont {top: 60%;}
+    .share_wrap {top: 60%;} */
+    /* 기사 제목 */
+    .container .arte365-post-single .post-category {width: auto !important; height: auto !important; background: transparent;}
+    .container .arte365-post-single .post-category .cap_category {justify-content: left; width: auto !important; height: auto !important; color: #ED1A3C; font-size: 14px; line-height: 24px; font-weight: bold;}
+    .container .arte365-post-single .post-title {font-size: 26px; line-height: 34px; font-weight: bold; color: #111;}
+}

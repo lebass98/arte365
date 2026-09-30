@@ -1,0 +1,63 @@
+.sidebar {
+}
+
+.home-tab-content .sidebar .banner {
+	padding-top: 30px;
+}
+
+.sidebar .banner img {
+	display: block;
+	width: 100%;
+}
+
+.sidebar .banner a {
+	display: block;
+	display: inline-block;
+	margin-top:3px;
+	/* margin-bottom: 20px; */
+}
+
+.sidebar .banner a:last-child {
+	margin-bottom: 0;
+}
+.sidebar .sidebar-widget {
+	width: 292px;
+	margin: 0 auto 30px;
+}
+
+.sidebar .sidebar-widget .category {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.sidebar .sidebar-widget .post-box {
+	background: #fff;
+}
+
+.sidebar .sidebar-widget .tb {
+	display: block;
+	width: 100%;
+}
+
+.sidebar .sidebar-widget .post-excerpt {
+	padding: 10px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.sidebar .sidebar-widget .post-excerpt p {
+	margin-bottom: 10px;
+}
+
+
+.sidebar .sidebar-widget .post-excerpt p:last-child {
+	margin-bottom: 0;
+}
+
+/* 20180709 추가 */
+
+/* .sidebar .banner a:last-child{margin-top:3px;width:99.5%;height:1px;} */
+.sidebar .banner a:last-child{margin-top:3px;}
+.sidebar a[href="/?page_id=63542"], .sidebar a[href="/?cat=4259"]{margin-right:3px}
+.sidebar a[href="/?page_id=39807"], .sidebar a[href="/?page_id=51291"]{margin-top:3px}
+.sidebar a[href="/?page_id=63542"], .sidebar a[href="/?page_id=39807"], .sidebar a[href="/?cat=4259"], .sidebar a[href="/?page_id=51291"]{width:48.9%;}
