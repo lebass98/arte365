@@ -1,0 +1,44 @@
+/*72 메인1 소제목 */
+.home-main-banner .banner-desc .post-meta .post-title {
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.2;
+	text-align:left;
+}
+
+/* 메인1 소제목 */
+.home-main-banner .banner-desc .post-meta .post-excerpt {
+	margin-bottom:30px;
+    font-size: 20px;
+	text-shadow: 1px 1px 5px #000000;
+    color: #cf7aef;
+	text-align:left;
+}
+
+/* 102 메인1 편집자 */
+.home-main-banner .banner-desc .post-meta .publisher {
+    font-size: 14px;
+    color: #fff;
+	text-align:left;
+}
+
+/* .featured-posts .post-item:last-child .post-title, .featured-posts .post-item:last-child .post-excerpt{display:none} */
+.featured-posts .post-item:last-child a[href="http://arte365.kr/?p=76577"] .meta-box{height:0}
+
+.postboimg .ul_floatkyh6.box_line {display: block;}
+.postboimg .ul_floatkyh6 li.box_img:first-child {width: 100%;}
+
+
+
+
+
+/* 이벤트배너 위치조정 */
+.event_banner{display:block;height:85px;}
+.event_banner img{width:100%;height:85px;} 
+#header{top:0;}
+#header.solid{top:0}
+
+
+.event_banner{display:none}

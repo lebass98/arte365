@@ -1352,4 +1352,27 @@
 
     });
 
+    // Automatically prepend https://arte365.kr to img src and a href starting with /wp-content/
+    (function () {
+        function fixWpUrls() {
+            document.querySelectorAll('img[src^="/wp-content/"]').forEach(function (img) {
+                var src = img.getAttribute('src');
+                if (src && src.indexOf('/wp-content/') === 0) {
+                    img.src = 'https://arte365.kr' + src;
+                }
+            });
+            document.querySelectorAll('a[href^="/wp-content/"]').forEach(function (a) {
+                var href = a.getAttribute('href');
+                if (href && href.indexOf('/wp-content/') === 0) {
+                    a.href = 'https://arte365.kr' + href;
+                }
+            });
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', fixWpUrls);
+        } else {
+            fixWpUrls();
+        }
+    })();
 </script>
